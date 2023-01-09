@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE_FinalProject.Views
 {
-    internal class InitView
+    class InitView
     {
     }
 }

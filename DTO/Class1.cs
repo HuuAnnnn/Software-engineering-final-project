@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SE_FinalProject.Views
+namespace DTO
 {
-    class InitView
+    public class Class1
     {
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,6 +43,7 @@
             this.btnMaximumsize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.secondaryForm = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -65,6 +67,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -72,6 +75,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // featManagement
             // 
@@ -190,6 +194,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(928, 22);
             this.panel1.TabIndex = 4;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // embedForm
@@ -253,10 +258,11 @@
             // 
             // secondaryForm
             // 
-            this.secondaryForm.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.secondaryForm.Location = new System.Drawing.Point(197, 21);
+            this.secondaryForm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.secondaryForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.secondaryForm.Location = new System.Drawing.Point(197, 22);
             this.secondaryForm.Name = "secondaryForm";
-            this.secondaryForm.Size = new System.Drawing.Size(927, 572);
+            this.secondaryForm.Size = new System.Drawing.Size(928, 571);
             this.secondaryForm.TabIndex = 5;
             // 
             // Home
@@ -294,5 +300,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel embedForm;
         private System.Windows.Forms.Panel secondaryForm;
+        private System.Windows.Forms.Timer timer1;
     }
 }

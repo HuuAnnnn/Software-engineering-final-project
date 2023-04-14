@@ -22,22 +22,15 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private Panel leftDisplayChooosePanel;
         private Button featureBtn;
         private string name;
+        private Form currentEmbedForm;
         public Home()
         {
             InitializeComponent();
             const int LEFT_PANEL_WIDTH = 5;
             leftDisplayChooosePanel = new Panel();
             leftDisplayChooosePanel.Size = new Size(LEFT_PANEL_WIDTH, featHome.Height);
-        }
-
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            activateFeature(sender, "home");
+            featHome.Focus();
+            openEmbedForm(new Homepage());
         }
 
         public void activateFeature(object feature, string featureName)
@@ -66,6 +59,25 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             return myImage;
         }
 
+        private void openEmbedForm(Form embedForm)
+        {
+            if (currentEmbedForm != null)
+            {
+                currentEmbedForm.Close();
+            }
+
+            currentEmbedForm = embedForm;
+            embedForm.TopLevel = false;
+            embedForm.FormBorderStyle = FormBorderStyle.None;
+            embedForm.Dock = DockStyle.Fill;
+
+            this.secondaryForm.Controls.Add(embedForm);
+            this.secondaryForm.Tag = embedForm;
+
+            embedForm.BringToFront();
+            embedForm.Show();
+        }
+
         public void disableFeature()
         {
             if (featureBtn != null)
@@ -84,8 +96,8 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            GUIUtils.ReleaseCapture();
+            GUIUtils.SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -110,6 +122,12 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            activateFeature(sender, "home");
+            openEmbedForm(new Index());
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             activateFeature(sender, "user");
@@ -128,6 +146,17 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private void button5_Click(object sender, EventArgs e)
         {
             activateFeature(sender, "management");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            openEmbedForm(new Homepage());
+            disableFeature();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

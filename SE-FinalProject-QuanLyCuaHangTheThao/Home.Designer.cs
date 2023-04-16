@@ -42,8 +42,8 @@
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnMaximumsize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.secondaryForm = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.secondaryForm = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -258,12 +258,12 @@
             // 
             // secondaryForm
             // 
-            this.secondaryForm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.secondaryForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.secondaryForm.Location = new System.Drawing.Point(197, 22);
             this.secondaryForm.Name = "secondaryForm";
             this.secondaryForm.Size = new System.Drawing.Size(928, 571);
             this.secondaryForm.TabIndex = 5;
+            this.secondaryForm.Resize += new System.EventHandler(this.secondaryForm_Resize);
             // 
             // Home
             // 
@@ -278,6 +278,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -299,7 +300,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel embedForm;
-        private System.Windows.Forms.Panel secondaryForm;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel secondaryForm;
     }
 }

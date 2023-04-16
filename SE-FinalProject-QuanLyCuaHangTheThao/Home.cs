@@ -68,12 +68,13 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
             currentEmbedForm = embedForm;
             embedForm.TopLevel = false;
+            embedForm.TopMost = true;
             embedForm.FormBorderStyle = FormBorderStyle.None;
             embedForm.Dock = DockStyle.Fill;
 
             this.secondaryForm.Controls.Add(embedForm);
             this.secondaryForm.Tag = embedForm;
-
+            this.Resize += secondaryForm_Resize;
             embedForm.BringToFront();
             embedForm.Show();
         }
@@ -141,6 +142,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private void button2_Click(object sender, EventArgs e)
         {
             activateFeature(sender, "product");
+            openEmbedForm(new ProductsForm());
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -157,6 +159,14 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void secondaryForm_Resize(object sender, EventArgs e)
+        {
+            if (currentEmbedForm != null)
+            {
+                currentEmbedForm.Size = secondaryForm.ClientSize;
+            }
         }
     }
 }

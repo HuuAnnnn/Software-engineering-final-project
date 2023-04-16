@@ -16,7 +16,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChangePassword());
+            Application.Run(new Home());
         }
     }
 }

@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.featManagement = new System.Windows.Forms.Button();
-            this.featAccount = new System.Windows.Forms.Button();
-            this.featStatistic = new System.Windows.Forms.Button();
-            this.featProduct = new System.Windows.Forms.Button();
-            this.featHome = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.embedForm = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
@@ -44,9 +38,15 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.secondaryForm = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.featManagement = new System.Windows.Forms.Button();
+            this.featAccount = new System.Windows.Forms.Button();
+            this.featStatistic = new System.Windows.Forms.Button();
+            this.featProduct = new System.Windows.Forms.Button();
+            this.featHome = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -63,6 +63,89 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 593);
             this.panel2.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel1.Controls.Add(this.embedForm);
+            this.panel1.Controls.Add(this.btnMinimize);
+            this.panel1.Controls.Add(this.btnMaximumsize);
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(197, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(928, 22);
+            this.panel1.TabIndex = 4;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // embedForm
+            // 
+            this.embedForm.Location = new System.Drawing.Point(2, 21);
+            this.embedForm.Name = "embedForm";
+            this.embedForm.Size = new System.Drawing.Size(925, 571);
+            this.embedForm.TabIndex = 4;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.ForeColor = System.Drawing.Color.Snow;
+            this.btnMinimize.Location = new System.Drawing.Point(786, -4);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(48, 23);
+            this.btnMinimize.TabIndex = 1;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Text = "🗕";
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnMaximumsize
+            // 
+            this.btnMaximumsize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximumsize.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnMaximumsize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMaximumsize.FlatAppearance.BorderSize = 0;
+            this.btnMaximumsize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximumsize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaximumsize.ForeColor = System.Drawing.Color.Snow;
+            this.btnMaximumsize.Location = new System.Drawing.Point(832, -3);
+            this.btnMaximumsize.Name = "btnMaximumsize";
+            this.btnMaximumsize.Size = new System.Drawing.Size(48, 23);
+            this.btnMaximumsize.TabIndex = 2;
+            this.btnMaximumsize.Text = "🗖";
+            this.btnMaximumsize.UseVisualStyleBackColor = false;
+            this.btnMaximumsize.Click += new System.EventHandler(this.btnMaximumsize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Snow;
+            this.btnClose.Location = new System.Drawing.Point(879, -3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(48, 23);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "⨉";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // secondaryForm
+            // 
+            this.secondaryForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.secondaryForm.Location = new System.Drawing.Point(197, 22);
+            this.secondaryForm.Name = "secondaryForm";
+            this.secondaryForm.Size = new System.Drawing.Size(928, 571);
+            this.secondaryForm.TabIndex = 5;
+            this.secondaryForm.Resize += new System.EventHandler(this.secondaryForm_Resize);
             // 
             // pictureBox1
             // 
@@ -182,89 +265,6 @@
             this.featHome.UseVisualStyleBackColor = false;
             this.featHome.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel1.Controls.Add(this.embedForm);
-            this.panel1.Controls.Add(this.btnMinimize);
-            this.panel1.Controls.Add(this.btnMaximumsize);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(197, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(928, 22);
-            this.panel1.TabIndex = 4;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // embedForm
-            // 
-            this.embedForm.Location = new System.Drawing.Point(2, 21);
-            this.embedForm.Name = "embedForm";
-            this.embedForm.Size = new System.Drawing.Size(925, 571);
-            this.embedForm.TabIndex = 4;
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimize.ForeColor = System.Drawing.Color.Snow;
-            this.btnMinimize.Location = new System.Drawing.Point(786, -4);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(48, 23);
-            this.btnMinimize.TabIndex = 1;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Text = "🗕";
-            this.btnMinimize.UseVisualStyleBackColor = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnMaximumsize
-            // 
-            this.btnMaximumsize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximumsize.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnMaximumsize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnMaximumsize.FlatAppearance.BorderSize = 0;
-            this.btnMaximumsize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximumsize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaximumsize.ForeColor = System.Drawing.Color.Snow;
-            this.btnMaximumsize.Location = new System.Drawing.Point(832, -3);
-            this.btnMaximumsize.Name = "btnMaximumsize";
-            this.btnMaximumsize.Size = new System.Drawing.Size(48, 23);
-            this.btnMaximumsize.TabIndex = 2;
-            this.btnMaximumsize.Text = "🗖";
-            this.btnMaximumsize.UseVisualStyleBackColor = false;
-            this.btnMaximumsize.Click += new System.EventHandler(this.btnMaximumsize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.Snow;
-            this.btnClose.Location = new System.Drawing.Point(879, -3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(48, 23);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "⨉";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // secondaryForm
-            // 
-            this.secondaryForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.secondaryForm.Location = new System.Drawing.Point(197, 22);
-            this.secondaryForm.Name = "secondaryForm";
-            this.secondaryForm.Size = new System.Drawing.Size(928, 571);
-            this.secondaryForm.TabIndex = 5;
-            this.secondaryForm.Resize += new System.EventHandler(this.secondaryForm_Resize);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,8 +281,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

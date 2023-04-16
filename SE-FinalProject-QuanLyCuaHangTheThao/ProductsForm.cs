@@ -39,19 +39,52 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                 {
                     decimal decval;
                     string inputAmountInCurrencyForm = displayLimitPriceRange.Text;
-                    bool convt = decimal.TryParse(inputAmountInCurrencyForm,
+
+                    // if user input like 100,000,000 then we must convert it by currency
+                    if (inputAmountInCurrencyForm.Contains(",")) {
+                        bool convt = decimal.TryParse(inputAmountInCurrencyForm,
                                                     NumberStyles.Currency,
                                                     CultureInfo.GetCultureInfo("vn-VN").NumberFormat,
                                                     out decval);
+                    } else
+                    {
+                        decval = Convert.ToDecimal(inputAmountInCurrencyForm);
+                    }
+
                     priceRange.Value = Convert.ToInt32(decval);
                     displayLimitPriceRange.Text = GUIUtils.convertIntoVND(priceRange.Value);
-                } 
+                }
                 catch
                 {
                     MessageBox.Show("Nhập sai định dạng, vui lòng nhập lại");
                     priceRange.Value = oldValue;
                 }
             }
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel17_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel19_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel21_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

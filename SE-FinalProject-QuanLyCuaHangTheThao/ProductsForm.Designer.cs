@@ -34,10 +34,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.totalInCart = new System.Windows.Forms.Label();
-            this.checkCart = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.inProductSearch = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,23 +50,25 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.displayShift = new System.Windows.Forms.Label();
             this.lblShift = new System.Windows.Forms.Label();
             this.displayEmpUsername = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.checkCart = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.imgUsername = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).BeginInit();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.priceRange)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgUsername)).BeginInit();
             this.SuspendLayout();
@@ -98,7 +98,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.60617F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.39383F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
@@ -117,9 +117,9 @@
             this.panel5.Controls.Add(this.totalInCart);
             this.panel5.Controls.Add(this.checkCart);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(838, 3);
+            this.panel5.Location = new System.Drawing.Point(837, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(87, 116);
+            this.panel5.Size = new System.Drawing.Size(88, 116);
             this.panel5.TabIndex = 37;
             // 
             // label9
@@ -129,7 +129,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(-2, -1);
+            this.label9.Location = new System.Drawing.Point(-1, -1);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(89, 28);
             this.label9.TabIndex = 36;
@@ -144,23 +144,11 @@
             this.totalInCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.totalInCart.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalInCart.ForeColor = System.Drawing.Color.Red;
-            this.totalInCart.Location = new System.Drawing.Point(39, 30);
+            this.totalInCart.Location = new System.Drawing.Point(40, 30);
             this.totalInCart.Name = "totalInCart";
             this.totalInCart.Size = new System.Drawing.Size(48, 31);
             this.totalInCart.TabIndex = 33;
             this.totalInCart.Text = "100";
-            // 
-            // checkCart
-            // 
-            this.checkCart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkCart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkCart.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.trolley;
-            this.checkCart.Location = new System.Drawing.Point(1, 30);
-            this.checkCart.Name = "checkCart";
-            this.checkCart.Size = new System.Drawing.Size(82, 85);
-            this.checkCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.checkCart.TabIndex = 34;
-            this.checkCart.TabStop = false;
             // 
             // panel4
             // 
@@ -171,7 +159,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(200, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(632, 116);
+            this.panel4.Size = new System.Drawing.Size(631, 116);
             this.panel4.TabIndex = 36;
             // 
             // tableLayoutPanel2
@@ -180,7 +168,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.238185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.76182F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.inProductSearch, 1, 0);
@@ -189,19 +177,8 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(630, 38);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(629, 38);
             this.tableLayoutPanel2.TabIndex = 35;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.search;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
             // 
             // btnSearch
             // 
@@ -211,9 +188,9 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Quicksand", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(525, 4);
+            this.btnSearch.Location = new System.Drawing.Point(522, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(101, 30);
+            this.btnSearch.Size = new System.Drawing.Size(103, 30);
             this.btnSearch.TabIndex = 32;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -225,7 +202,7 @@
             this.inProductSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inProductSearch.Location = new System.Drawing.Point(37, 4);
             this.inProductSearch.Name = "inProductSearch";
-            this.inProductSearch.Size = new System.Drawing.Size(481, 30);
+            this.inProductSearch.Size = new System.Drawing.Size(478, 30);
             this.inProductSearch.TabIndex = 31;
             this.inProductSearch.Text = "";
             // 
@@ -238,7 +215,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(630, 28);
+            this.label4.Size = new System.Drawing.Size(629, 28);
             this.label4.TabIndex = 34;
             this.label4.Text = "TÌM KIẾM";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -249,7 +226,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox1.Location = new System.Drawing.Point(0, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(630, 46);
+            this.groupBox1.Size = new System.Drawing.Size(629, 46);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bộ lọc";
@@ -277,7 +254,7 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(624, 27);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(623, 27);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // chooseSortType
@@ -288,7 +265,7 @@
             this.chooseSortType.FormattingEnabled = true;
             this.chooseSortType.Location = new System.Drawing.Point(220, 3);
             this.chooseSortType.Name = "chooseSortType";
-            this.chooseSortType.Size = new System.Drawing.Size(114, 21);
+            this.chooseSortType.Size = new System.Drawing.Size(113, 21);
             this.chooseSortType.TabIndex = 41;
             // 
             // chooseType
@@ -306,7 +283,7 @@
             // 
             this.displayLimitPriceRange.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayLimitPriceRange.Font = new System.Drawing.Font("Quicksand", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayLimitPriceRange.Location = new System.Drawing.Point(519, 3);
+            this.displayLimitPriceRange.Location = new System.Drawing.Point(518, 3);
             this.displayLimitPriceRange.Name = "displayLimitPriceRange";
             this.displayLimitPriceRange.Size = new System.Drawing.Size(102, 22);
             this.displayLimitPriceRange.TabIndex = 39;
@@ -318,7 +295,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Quicksand SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(340, 4);
+            this.label7.Location = new System.Drawing.Point(339, 4);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 19);
             this.label7.TabIndex = 37;
@@ -327,7 +304,7 @@
             // priceRange
             // 
             this.priceRange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.priceRange.Location = new System.Drawing.Point(432, 3);
+            this.priceRange.Location = new System.Drawing.Point(431, 3);
             this.priceRange.Maximum = 100000000;
             this.priceRange.Name = "priceRange";
             this.priceRange.Size = new System.Drawing.Size(81, 21);
@@ -387,17 +364,6 @@
             this.label2.Text = "THÔNG TIN NHÂN VIÊN";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox2.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.shift;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 74);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
-            // 
             // displayShift
             // 
             this.displayShift.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -442,6 +408,40 @@
             this.lblUsername.TabIndex = 29;
             this.lblUsername.Text = "Tên:";
             // 
+            // checkCart
+            // 
+            this.checkCart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkCart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkCart.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.trolley;
+            this.checkCart.Location = new System.Drawing.Point(2, 30);
+            this.checkCart.Name = "checkCart";
+            this.checkCart.Size = new System.Drawing.Size(82, 85);
+            this.checkCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.checkCart.TabIndex = 34;
+            this.checkCart.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.search;
+            this.pictureBox3.Location = new System.Drawing.Point(4, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 30;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox2.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.shift;
+            this.pictureBox2.Location = new System.Drawing.Point(4, 74);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabStop = false;
+            // 
             // imgUsername
             // 
             this.imgUsername.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -469,10 +469,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).EndInit();
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -480,6 +478,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.priceRange)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgUsername)).EndInit();
             this.ResumeLayout(false);

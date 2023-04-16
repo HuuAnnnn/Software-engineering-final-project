@@ -127,6 +127,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="StatisticForm.resx">
+      <DependentUpon>StatisticForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +223,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\trolley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\trolley-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\trolley-active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\money_receive.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

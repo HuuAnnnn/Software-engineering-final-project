@@ -150,6 +150,11 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             activateFeature(sender, "management");
         }
 
+        private void featTrolley_Click(object sender, EventArgs e)
+        {
+            activateFeature(sender, "trolley");
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             openEmbedForm(new Homepage());
@@ -167,6 +172,11 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             {
                 currentEmbedForm.Size = secondaryForm.ClientSize;
             }
+        }
+
+        private void featReceipt_Click(object sender, EventArgs e)
+        {
+            activateFeature(sender, "receipt");
         }
     }
 }

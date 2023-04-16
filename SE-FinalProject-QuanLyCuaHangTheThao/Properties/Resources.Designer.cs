@@ -93,6 +93,26 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap customer {
+            get {
+                object obj = ResourceManager.GetObject("customer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap customers {
+            get {
+                object obj = ResourceManager.GetObject("customers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_active {
             get {
                 object obj = ResourceManager.GetObject("home_active", resourceCulture);
@@ -183,6 +203,26 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap money {
+            get {
+                object obj = ResourceManager.GetObject("money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money_receive {
+            get {
+                object obj = ResourceManager.GetObject("money_receive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap product_active {
             get {
                 object obj = ResourceManager.GetObject("product_active", resourceCulture);
@@ -196,6 +236,46 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao.Properties {
         internal static System.Drawing.Bitmap product_normal {
             get {
                 object obj = ResourceManager.GetObject("product_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap products {
+            get {
+                object obj = ResourceManager.GetObject("products", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap products1 {
+            get {
+                object obj = ResourceManager.GetObject("products1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receipt_active {
+            get {
+                object obj = ResourceManager.GetObject("receipt_active", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receipt_normal {
+            get {
+                object obj = ResourceManager.GetObject("receipt_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +346,26 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao.Properties {
         internal static System.Drawing.Bitmap trolley {
             get {
                 object obj = ResourceManager.GetObject("trolley", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trolley_active {
+            get {
+                object obj = ResourceManager.GetObject("trolley_active", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trolley_normal {
+            get {
+                object obj = ResourceManager.GetObject("trolley_normal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

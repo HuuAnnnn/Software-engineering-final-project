@@ -31,6 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.featReceipt = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.featTrolley = new System.Windows.Forms.Button();
+            this.featAccount = new System.Windows.Forms.Button();
+            this.featStatistic = new System.Windows.Forms.Button();
+            this.featProduct = new System.Windows.Forms.Button();
+            this.featHome = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.embedForm = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
@@ -38,22 +46,18 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.secondaryForm = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.featManagement = new System.Windows.Forms.Button();
-            this.featAccount = new System.Windows.Forms.Button();
-            this.featStatistic = new System.Windows.Forms.Button();
-            this.featProduct = new System.Windows.Forms.Button();
-            this.featHome = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.featReceipt);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.featManagement);
+            this.panel2.Controls.Add(this.featTrolley);
             this.panel2.Controls.Add(this.featAccount);
             this.panel2.Controls.Add(this.featStatistic);
             this.panel2.Controls.Add(this.featProduct);
@@ -63,6 +67,166 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 593);
             this.panel2.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.OrangeRed;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Snow;
+            this.button2.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.management_normal;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 439);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(197, 58);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Quản lý";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // featReceipt
+            // 
+            this.featReceipt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.featReceipt.AutoSize = true;
+            this.featReceipt.BackColor = System.Drawing.Color.OrangeRed;
+            this.featReceipt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.featReceipt.FlatAppearance.BorderSize = 0;
+            this.featReceipt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.featReceipt.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.featReceipt.ForeColor = System.Drawing.Color.Snow;
+            this.featReceipt.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.receipt_normal;
+            this.featReceipt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.featReceipt.Location = new System.Drawing.Point(0, 375);
+            this.featReceipt.Name = "featReceipt";
+            this.featReceipt.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.featReceipt.Size = new System.Drawing.Size(197, 58);
+            this.featReceipt.TabIndex = 9;
+            this.featReceipt.Text = "Hóa đơn";
+            this.featReceipt.UseVisualStyleBackColor = false;
+            this.featReceipt.Click += new System.EventHandler(this.featReceipt_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(169, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // featTrolley
+            // 
+            this.featTrolley.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.featTrolley.AutoSize = true;
+            this.featTrolley.BackColor = System.Drawing.Color.OrangeRed;
+            this.featTrolley.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.featTrolley.FlatAppearance.BorderSize = 0;
+            this.featTrolley.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.featTrolley.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.featTrolley.ForeColor = System.Drawing.Color.Snow;
+            this.featTrolley.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.trolley_normal;
+            this.featTrolley.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.featTrolley.Location = new System.Drawing.Point(0, 311);
+            this.featTrolley.Name = "featTrolley";
+            this.featTrolley.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.featTrolley.Size = new System.Drawing.Size(197, 58);
+            this.featTrolley.TabIndex = 8;
+            this.featTrolley.Text = "Giỏ hàng";
+            this.featTrolley.UseVisualStyleBackColor = false;
+            this.featTrolley.Click += new System.EventHandler(this.featTrolley_Click);
+            // 
+            // featAccount
+            // 
+            this.featAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.featAccount.AutoSize = true;
+            this.featAccount.BackColor = System.Drawing.Color.OrangeRed;
+            this.featAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.featAccount.FlatAppearance.BorderSize = 0;
+            this.featAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.featAccount.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.featAccount.ForeColor = System.Drawing.Color.Snow;
+            this.featAccount.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.user_normal;
+            this.featAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.featAccount.Location = new System.Drawing.Point(0, 543);
+            this.featAccount.Name = "featAccount";
+            this.featAccount.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.featAccount.Size = new System.Drawing.Size(197, 50);
+            this.featAccount.TabIndex = 7;
+            this.featAccount.Text = "Tài khoản";
+            this.featAccount.UseVisualStyleBackColor = false;
+            this.featAccount.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // featStatistic
+            // 
+            this.featStatistic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.featStatistic.AutoSize = true;
+            this.featStatistic.BackColor = System.Drawing.Color.OrangeRed;
+            this.featStatistic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.featStatistic.FlatAppearance.BorderSize = 0;
+            this.featStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.featStatistic.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.featStatistic.ForeColor = System.Drawing.Color.Snow;
+            this.featStatistic.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.statistic_normal;
+            this.featStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.featStatistic.Location = new System.Drawing.Point(0, 247);
+            this.featStatistic.Name = "featStatistic";
+            this.featStatistic.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.featStatistic.Size = new System.Drawing.Size(197, 58);
+            this.featStatistic.TabIndex = 6;
+            this.featStatistic.Text = "Thống kê";
+            this.featStatistic.UseVisualStyleBackColor = false;
+            this.featStatistic.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // featProduct
+            // 
+            this.featProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.featProduct.AutoSize = true;
+            this.featProduct.BackColor = System.Drawing.Color.OrangeRed;
+            this.featProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.featProduct.FlatAppearance.BorderSize = 0;
+            this.featProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.featProduct.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.featProduct.ForeColor = System.Drawing.Color.Snow;
+            this.featProduct.Image = ((System.Drawing.Image)(resources.GetObject("featProduct.Image")));
+            this.featProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.featProduct.Location = new System.Drawing.Point(0, 183);
+            this.featProduct.Name = "featProduct";
+            this.featProduct.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.featProduct.Size = new System.Drawing.Size(197, 58);
+            this.featProduct.TabIndex = 5;
+            this.featProduct.Text = "Sản phẩm";
+            this.featProduct.UseVisualStyleBackColor = false;
+            this.featProduct.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // featHome
+            // 
+            this.featHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.featHome.AutoSize = true;
+            this.featHome.BackColor = System.Drawing.Color.OrangeRed;
+            this.featHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.featHome.FlatAppearance.BorderSize = 0;
+            this.featHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.featHome.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.featHome.ForeColor = System.Drawing.Color.Snow;
+            this.featHome.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.home_normal;
+            this.featHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.featHome.Location = new System.Drawing.Point(0, 119);
+            this.featHome.Name = "featHome";
+            this.featHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.featHome.Size = new System.Drawing.Size(197, 58);
+            this.featHome.TabIndex = 4;
+            this.featHome.Text = "Trang chủ";
+            this.featHome.UseVisualStyleBackColor = false;
+            this.featHome.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -147,124 +311,6 @@
             this.secondaryForm.TabIndex = 5;
             this.secondaryForm.Resize += new System.EventHandler(this.secondaryForm_Resize);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // featManagement
-            // 
-            this.featManagement.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.featManagement.AutoSize = true;
-            this.featManagement.BackColor = System.Drawing.Color.OrangeRed;
-            this.featManagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.featManagement.FlatAppearance.BorderSize = 0;
-            this.featManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.featManagement.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.featManagement.ForeColor = System.Drawing.Color.Snow;
-            this.featManagement.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.management_normal;
-            this.featManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.featManagement.Location = new System.Drawing.Point(0, 457);
-            this.featManagement.Name = "featManagement";
-            this.featManagement.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.featManagement.Size = new System.Drawing.Size(197, 83);
-            this.featManagement.TabIndex = 8;
-            this.featManagement.Text = "Quản lý";
-            this.featManagement.UseVisualStyleBackColor = false;
-            this.featManagement.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // featAccount
-            // 
-            this.featAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.featAccount.AutoSize = true;
-            this.featAccount.BackColor = System.Drawing.Color.OrangeRed;
-            this.featAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.featAccount.FlatAppearance.BorderSize = 0;
-            this.featAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.featAccount.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.featAccount.ForeColor = System.Drawing.Color.Snow;
-            this.featAccount.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.user_normal;
-            this.featAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.featAccount.Location = new System.Drawing.Point(0, 375);
-            this.featAccount.Name = "featAccount";
-            this.featAccount.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.featAccount.Size = new System.Drawing.Size(197, 83);
-            this.featAccount.TabIndex = 7;
-            this.featAccount.Text = "Tài khoản";
-            this.featAccount.UseVisualStyleBackColor = false;
-            this.featAccount.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // featStatistic
-            // 
-            this.featStatistic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.featStatistic.AutoSize = true;
-            this.featStatistic.BackColor = System.Drawing.Color.OrangeRed;
-            this.featStatistic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.featStatistic.FlatAppearance.BorderSize = 0;
-            this.featStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.featStatistic.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.featStatistic.ForeColor = System.Drawing.Color.Snow;
-            this.featStatistic.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.statistic_normal;
-            this.featStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.featStatistic.Location = new System.Drawing.Point(0, 295);
-            this.featStatistic.Name = "featStatistic";
-            this.featStatistic.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.featStatistic.Size = new System.Drawing.Size(197, 83);
-            this.featStatistic.TabIndex = 6;
-            this.featStatistic.Text = "Thống kê";
-            this.featStatistic.UseVisualStyleBackColor = false;
-            this.featStatistic.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // featProduct
-            // 
-            this.featProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.featProduct.AutoSize = true;
-            this.featProduct.BackColor = System.Drawing.Color.OrangeRed;
-            this.featProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.featProduct.FlatAppearance.BorderSize = 0;
-            this.featProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.featProduct.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.featProduct.ForeColor = System.Drawing.Color.Snow;
-            this.featProduct.Image = ((System.Drawing.Image)(resources.GetObject("featProduct.Image")));
-            this.featProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.featProduct.Location = new System.Drawing.Point(0, 216);
-            this.featProduct.Name = "featProduct";
-            this.featProduct.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.featProduct.Size = new System.Drawing.Size(197, 83);
-            this.featProduct.TabIndex = 5;
-            this.featProduct.Text = "Sản phẩm";
-            this.featProduct.UseVisualStyleBackColor = false;
-            this.featProduct.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // featHome
-            // 
-            this.featHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.featHome.AutoSize = true;
-            this.featHome.BackColor = System.Drawing.Color.OrangeRed;
-            this.featHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.featHome.FlatAppearance.BorderSize = 0;
-            this.featHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.featHome.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.featHome.ForeColor = System.Drawing.Color.Snow;
-            this.featHome.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.home_normal;
-            this.featHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.featHome.Location = new System.Drawing.Point(0, 136);
-            this.featHome.Name = "featHome";
-            this.featHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.featHome.Size = new System.Drawing.Size(197, 83);
-            this.featHome.TabIndex = 4;
-            this.featHome.Text = "Trang chủ";
-            this.featHome.UseVisualStyleBackColor = false;
-            this.featHome.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,8 +327,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -293,7 +339,7 @@
         private System.Windows.Forms.Button featAccount;
         private System.Windows.Forms.Button featStatistic;
         private System.Windows.Forms.Button featProduct;
-        private System.Windows.Forms.Button featManagement;
+        private System.Windows.Forms.Button featTrolley;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnMaximumsize;
@@ -302,5 +348,7 @@
         private System.Windows.Forms.Panel embedForm;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel secondaryForm;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button featReceipt;
     }
 }

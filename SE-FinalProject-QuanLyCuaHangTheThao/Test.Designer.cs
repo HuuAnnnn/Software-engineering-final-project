@@ -37,6 +37,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.totalInCart = new System.Windows.Forms.Label();
+            this.checkCart = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,36 +45,35 @@
             this.chooseSortType = new System.Windows.Forms.ComboBox();
             this.chooseType = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.displayShift = new System.Windows.Forms.Label();
             this.lblShift = new System.Windows.Forms.Label();
             this.displayEmpUsername = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.imgUsername = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.displayProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.addToCart = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkCart = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.imgUsername = new System.Windows.Forms.PictureBox();
-            this.addToCart = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.priceRange)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgUsername)).BeginInit();
             this.panel1.SuspendLayout();
             this.displayProducts.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgUsername)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addToCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -180,6 +180,17 @@
             this.totalInCart.TabIndex = 33;
             this.totalInCart.Text = "100";
             // 
+            // checkCart
+            // 
+            this.checkCart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkCart.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.trolley;
+            this.checkCart.Location = new System.Drawing.Point(4, 34);
+            this.checkCart.Name = "checkCart";
+            this.checkCart.Size = new System.Drawing.Size(85, 85);
+            this.checkCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.checkCart.TabIndex = 34;
+            this.checkCart.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.AutoSize = true;
@@ -273,6 +284,17 @@
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.search;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 35);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 29;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -302,6 +324,17 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "THÔNG TIN NHÂN VIÊN";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.shift;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 78);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabStop = false;
             // 
             // displayShift
             // 
@@ -347,6 +380,17 @@
             this.lblUsername.TabIndex = 29;
             this.lblUsername.Text = "Tên:";
             // 
+            // imgUsername
+            // 
+            this.imgUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.imgUsername.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.username_index_1;
+            this.imgUsername.Location = new System.Drawing.Point(8, 40);
+            this.imgUsername.Name = "imgUsername";
+            this.imgUsername.Size = new System.Drawing.Size(30, 30);
+            this.imgUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgUsername.TabIndex = 28;
+            this.imgUsername.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -381,6 +425,18 @@
             this.panel6.Size = new System.Drawing.Size(193, 297);
             this.panel6.TabIndex = 1;
             // 
+            // addToCart
+            // 
+            this.addToCart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addToCart.BackColor = System.Drawing.Color.Gainsboro;
+            this.addToCart.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.cart;
+            this.addToCart.Location = new System.Drawing.Point(152, 258);
+            this.addToCart.Name = "addToCart";
+            this.addToCart.Size = new System.Drawing.Size(40, 36);
+            this.addToCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.addToCart.TabIndex = 3;
+            this.addToCart.TabStop = false;
+            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.OrangeRed;
@@ -404,68 +460,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Lều dã ngoại thiên nhiên 2 Seconds - Xanh dương đậm";
             // 
-            // checkCart
-            // 
-            this.checkCart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkCart.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.trolley;
-            this.checkCart.Location = new System.Drawing.Point(4, 34);
-            this.checkCart.Name = "checkCart";
-            this.checkCart.Size = new System.Drawing.Size(85, 85);
-            this.checkCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.checkCart.TabIndex = 34;
-            this.checkCart.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.search;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 35);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 29;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.shift;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 78);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
-            // 
-            // imgUsername
-            // 
-            this.imgUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imgUsername.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.username_index_1;
-            this.imgUsername.Location = new System.Drawing.Point(8, 40);
-            this.imgUsername.Name = "imgUsername";
-            this.imgUsername.Size = new System.Drawing.Size(30, 30);
-            this.imgUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgUsername.TabIndex = 28;
-            this.imgUsername.TabStop = false;
-            // 
-            // addToCart
-            // 
-            this.addToCart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.addToCart.BackColor = System.Drawing.Color.Gainsboro;
-            this.addToCart.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.cart;
-            this.addToCart.Location = new System.Drawing.Point(152, 258);
-            this.addToCart.Name = "addToCart";
-            this.addToCart.Size = new System.Drawing.Size(40, 36);
-            this.addToCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.addToCart.TabIndex = 3;
-            this.addToCart.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.mockup_image;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(193, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -482,19 +482,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.priceRange)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgUsername)).EndInit();
             this.panel1.ResumeLayout(false);
             this.displayProducts.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.checkCart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgUsername)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addToCart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

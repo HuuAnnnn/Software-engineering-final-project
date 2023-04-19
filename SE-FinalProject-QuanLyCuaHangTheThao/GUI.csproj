@@ -251,5 +251,11 @@
   <ItemGroup>
     <None Include="assets\money_receive.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{afa65d6c-6bc0-4a1a-a922-1c0095029a1b}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

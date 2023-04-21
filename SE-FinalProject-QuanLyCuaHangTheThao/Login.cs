@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 {
     public partial class Login : Form
     {
+        private AccountBUS accountBus;
         public Login()
         {
             InitializeComponent();
@@ -103,7 +105,51 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            login();
+        }
 
+        public void login()
+        {
+            String username = inUsername.Text;
+            String password = inPassword.Text;
+            string hashPasword = GUIUtils.hash(password);
+            if (username.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_USERNAME) ||
+                password.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_PASSWORD) ||
+                username.Equals("") || password.Equals(""))
+            {
+                MessageBox.Show("Vui lòng không để trống username/password");
+            }
+            else
+            {
+                accountBus = new AccountBUS(username, hashPasword);
+                if (!accountBus.isAuthUser())
+                {
+                    MessageBox.Show("Sai tài khoản/mật khẩu");
+                } 
+                else
+                {
+                    this.Dispose();
+                    Home homepage = new Home();
+                    homepage.Show();
+                }
+            }
+        }
+
+        private void inUsername_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                login();
+            }
+        }
+
+        private void inPassword_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                login();
+            }
         }
     }
 }

@@ -19,7 +19,10 @@ namespace DAO
             builder["Data Source"] = Configuration.DB_DATA_SOURCE;
             builder["integrated Security"] = true;
             builder["Initial Catalog"] = Configuration.DB_CATELOG;
-            connection = new SqlConnection(builder.ConnectionString);
+            string connectionString = "initial catalog = QuanLyCuaHangDungCuTheThao; " +
+                                        "data source = ANNNN\\SQLEXPRESS01; " +
+                                        "integrated security=true";
+            connection = new SqlConnection(connectionString);
             connection.Open();
         }
 
@@ -30,8 +33,7 @@ namespace DAO
         }
 
         public static DataTable selectQuery(string query)
-        {
-            
+        {   
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);

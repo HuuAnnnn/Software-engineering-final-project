@@ -2,12 +2,6 @@ USE [master]
 GO
 /****** Object:  Database [QuanLyCuaHangDungCuTheThao]    Script Date: 4/21/2023 8:21:39 PM ******/
 CREATE DATABASE [QuanLyCuaHangDungCuTheThao]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'QuanLyCuaHangDungCuTheThao', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\QuanLyCuaHangDungCuTheThao.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'QuanLyCuaHangDungCuTheThao_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\QuanLyCuaHangDungCuTheThao_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
- WITH CATALOG_COLLATION = DATABASE_DEFAULT
 GO
 ALTER DATABASE [QuanLyCuaHangDungCuTheThao] SET COMPATIBILITY_LEVEL = 150
 GO
@@ -86,7 +80,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Account](
-	[usename] [nvarchar](50) NOT NULL,
+	[username] [nvarchar](50) NOT NULL,
 	[password] [nvarchar](100) NOT NULL,
 	[timesChangePassword] [int] NOT NULL
 ) ON [PRIMARY]
@@ -123,3 +117,6 @@ USE [master]
 GO
 ALTER DATABASE [QuanLyCuaHangDungCuTheThao] SET  READ_WRITE 
 GO
+
+
+insert into account values ('Test', '123456', 0);

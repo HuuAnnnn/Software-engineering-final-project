@@ -86,10 +86,11 @@
             this.inPassword.Multiline = true;
             this.inPassword.Name = "inPassword";
             this.inPassword.Size = new System.Drawing.Size(475, 38);
-            this.inPassword.TabIndex = 4;
+            this.inPassword.TabIndex = 5;
             this.inPassword.Text = "Mật khẩu";
             this.inPassword.WordWrap = false;
             this.inPassword.Enter += new System.EventHandler(this.inPassword_Enter);
+            this.inPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.inPassword_KeyUp);
             this.inPassword.Leave += new System.EventHandler(this.inPassword_Leave);
             // 
             // inUsername
@@ -106,6 +107,7 @@
             this.inUsername.TabIndex = 4;
             this.inUsername.Text = "Tên người dùng";
             this.inUsername.Enter += new System.EventHandler(this.inUsername_Enter);
+            this.inUsername.KeyUp += new System.Windows.Forms.KeyEventHandler(this.inUsername_KeyUp);
             this.inUsername.Leave += new System.EventHandler(this.inUsername_Leave);
             // 
             // btnCancel

@@ -26,9 +26,15 @@ namespace BUS
         {
             this.productDAO.insertQuery();
         }
+
         public DataTable selectQuery()
         {
             return this.productDAO.selectQuery();
+        }
+
+        public DataTable selectQueryWithNameAndPrice(string productName, int price)
+        {
+            return this.productDAO.selectQueryWithNameAndPrice(productName, price);
         }
     }
 }

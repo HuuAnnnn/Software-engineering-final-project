@@ -30,6 +30,7 @@ namespace DAO
 
         public static DataTable selectQuery(string query)
         {
+            
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);

@@ -6,7 +6,6 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace DAO
 {
@@ -52,5 +51,11 @@ namespace DAO
             string selectQuery = "SELECT * FROM Product";
             return Connection.selectQuery(selectQuery);
         } 
+
+        public DataTable selectQueryWithNameAndPrice(string productName, int price)
+        {
+            string selectQuery = "SELECT * FROM Product WHERE productName LIKE '%" + productName + "%' AND price <= " + price;
+            return Connection.selectQuery(selectQuery);
+        }
     }
 }

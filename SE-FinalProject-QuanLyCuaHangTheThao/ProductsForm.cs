@@ -24,7 +24,9 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             displayLimitPriceRange.Text = GUIUtils.convertIntoVND(ConfigGUI.DEFAULT_LIMIT_PRICE);
             priceRange.Value = ConfigGUI.DEFAULT_LIMIT_PRICE;
             priceRange.Maximum = ConfigGUI.DEFAULT_LIMIT_PRICE;
-            addProducts();
+
+            productBUS = new ProductBUS();
+            addProducts(productBUS.selectQuery());
         }
 
         private void ProductsForm_Load(object sender, EventArgs e)
@@ -88,38 +90,32 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             fileStream.Close(); 
             return byteArray;
         }
+
         public Image convertByteArrayToImage(byte[] byteArray)
         {
-            MemoryStream memoryStream = new MemoryStream(byteArray);
-            memoryStream.Position = 0;
-            return Image.FromStream(memoryStream,false);
+            return (Bitmap)((new ImageConverter()).ConvertFrom(byteArray));
         }
-        public void addProducts()
+
+        public void addProducts(DataTable dataTableProduct)
         {
-            productBUS = new ProductBUS("0001", "aaa", 9, 9, "shoe", 400000, convertImageToByteArray("C:\\Users\\OMEN\\Desktop\\Study\\Công nghệ phần mềm\\CuoiKy\\testProduct\\image01.png"));
-            DataTable dataTableProduct = productBUS.selectQuery();
-            productBUS.insertQuery();
             Panel cardProduct = null;
             displayProducts.Margin = new Padding(10);
 
             string productName = "";
             string price = "";
-            byte[] byteArray = null;
             Image image = null;
             foreach(DataRow row in dataTableProduct.Select())
             {
                 productName = row["productName"].ToString();
                 price = row["price"].ToString();
-                byteArray = (byte[])row["photo"];
-                
-                //image = convertByteArrayToImage(byteArray);
-                cardProduct = createProductCard(productName, price, 1);
+                image = convertByteArrayToImage((byte[])row["photo"]);
+                cardProduct = createProductCard(productName, price, image);
                 cardProduct.Margin = new Padding(10);
                 displayProducts.Controls.Add(cardProduct);
             }
         }
 
-        public Panel createProductCard(string productName, string price, int image)
+        public Panel createProductCard(string productName, string price, Image image)
         {
             // main body of product frame
             Panel cardBody = new Panel();
@@ -129,7 +125,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
             // product image
             PictureBox cardImage = new PictureBox();
-            cardImage.Image = Properties.Resources.mockup_image;
+            cardImage.Image = image;
             cardImage.Size = new Size(193, 193);
             cardImage.SizeMode = PictureBoxSizeMode.StretchImage;
             cardImage.Location = new Point(-1, -1);
@@ -167,5 +163,27 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
             return cardBody;
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string productName = inProductSearch.Text;
+            string priceVND = displayLimitPriceRange.Text;
+            priceVND = priceVND.Substring(1, priceVND.Length - 4).Trim();
+            string[] priceVNDArray = priceVND.Split(',');
+            string priceFormated = "";
+            foreach(string priceElement in priceVNDArray)
+            {
+                priceFormated += priceElement;
+            }
+            int price = Convert.ToInt32(priceFormated);
+            DataTable productFound = findProductWithNameAndPrice(productName, price);
+            displayProducts.Controls.Clear();
+            addProducts(productFound);
+        }
+
+        public DataTable findProductWithNameAndPrice(string productName, int price)
+        {
+            return productBUS.selectQueryWithNameAndPrice(productName, price);
+        } 
     }
 }

@@ -136,6 +136,15 @@
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="assets\fonts\Inter-Black.ttf" />
+    <None Include="assets\fonts\Inter-Bold.ttf" />
+    <None Include="assets\fonts\Inter-ExtraBold.ttf" />
+    <None Include="assets\fonts\Inter-ExtraLight.ttf" />
+    <None Include="assets\fonts\Inter-Light.ttf" />
+    <None Include="assets\fonts\Inter-Medium.ttf" />
+    <None Include="assets\fonts\Inter-Regular.ttf" />
+    <None Include="assets\fonts\Inter-SemiBold.ttf" />
+    <None Include="assets\fonts\Inter-Thin.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

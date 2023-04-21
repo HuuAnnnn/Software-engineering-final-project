@@ -139,6 +139,33 @@
   <data name="home_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\home-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Inter_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-Black.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_ExtraBold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-ExtraBold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_ExtraLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-ExtraLight.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-Medium.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_SemiBold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-SemiBold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Inter_Thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\fonts\Inter-Thin.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="LoginImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\LoginImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

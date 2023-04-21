@@ -15,10 +15,11 @@ namespace DAO
         private static SqlConnection connection;
         public static void connect()
         {
-            string connectionString = "initial catalog = QuanLyCuaHangDungCuTheThao; " +
-                                        "data source = THINHVO\\SQLEXPRESS; " +
-                                        "integrated security=true";
-            connection = new SqlConnection(connectionString);
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder["Data Source"] = Configuration.DB_DATA_SOURCE;
+            builder["integrated Security"] = true;
+            builder["Initial Catalog"] = Configuration.DB_CATELOG;
+            connection = new SqlConnection(builder.ConnectionString);
             connection.Open();
         }
 

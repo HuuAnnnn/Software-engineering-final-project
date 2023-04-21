@@ -1,18 +1,23 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace SE_FinalProject_QuanLyCuaHangTheThao
 {
     public partial class ProductsForm : Form
     {
+        private ProductBUS productBUS;
         public ProductsForm()
         {
             InitializeComponent();
@@ -24,7 +29,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
         private void ProductsForm_Load(object sender, EventArgs e)
         {
-            
         }
 
         private void priceRange_Scroll(object sender, EventArgs e)
@@ -64,19 +68,58 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             }
         }
 
+        public byte[] convertImageToByteArray(string fileName)
+        {
+            FileStream fileStream;
+            BinaryReader binaryReader;
+            byte[] byteArray;
+
+            if (!File.Exists(fileName)) 
+            { 
+                return null; 
+            }
+
+            fileStream = new FileStream(fileName, FileMode.Open);
+            binaryReader = new BinaryReader(fileStream);
+            byteArray = new byte[fileStream.Length];
+            byteArray = binaryReader.ReadBytes(Convert.ToInt32((fileStream.Length)));
+            
+            binaryReader.Close(); 
+            fileStream.Close(); 
+            return byteArray;
+        }
+        public Image convertByteArrayToImage(byte[] byteArray)
+        {
+            MemoryStream memoryStream = new MemoryStream(byteArray);
+            memoryStream.Position = 0;
+            return Image.FromStream(memoryStream,false);
+        }
         public void addProducts()
         {
+            productBUS = new ProductBUS("0001", "aaa", 9, 9, "shoe", 400000, convertImageToByteArray("C:\\Users\\OMEN\\Desktop\\Study\\Công nghệ phần mềm\\CuoiKy\\testProduct\\image01.png"));
+            DataTable dataTableProduct = productBUS.selectQuery();
+            productBUS.insertQuery();
             Panel cardProduct = null;
             displayProducts.Margin = new Padding(10);
-            for (int i = 0; i < 100; i++)
+
+            string productName = "";
+            string price = "";
+            byte[] byteArray = null;
+            Image image = null;
+            foreach(DataRow row in dataTableProduct.Select())
             {
-                cardProduct = createProductCard();
+                productName = row["productName"].ToString();
+                price = row["price"].ToString();
+                byteArray = (byte[])row["photo"];
+                
+                //image = convertByteArrayToImage(byteArray);
+                cardProduct = createProductCard(productName, price, 1);
                 cardProduct.Margin = new Padding(10);
                 displayProducts.Controls.Add(cardProduct);
             }
         }
 
-        public Panel createProductCard()
+        public Panel createProductCard(string productName, string price, int image)
         {
             // main body of product frame
             Panel cardBody = new Panel();
@@ -96,7 +139,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             // title of product frame
             Label cardTitle = new Label();
             cardTitle.Size = new Size(189, 66);
-            cardTitle.Text = "Lều cắm trại Lều cắm trại Lều cắm trại Lều cắm trại";
+            cardTitle.Text = productName;
             cardTitle.BackColor = Color.White;
             cardTitle.Font = new Font("Quicksand", 12, FontStyle.Bold);
             cardTitle.Location = new Point(0, 195);
@@ -104,7 +147,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
             // product's price
             Label productPrice = new Label();
-            productPrice.Text = "10,000,000 VNĐ";
+            productPrice.Text = price;
             productPrice.Size = new Size(155, 36);
             productPrice.BackColor = Color.OrangeRed;
             productPrice.Font = new Font("Quicksand", 12, FontStyle.Bold);

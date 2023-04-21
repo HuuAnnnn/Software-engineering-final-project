@@ -13,8 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
-
+//using static System.Net.Mime.MediaTypeNames;
 namespace SE_FinalProject_QuanLyCuaHangTheThao
 {
     public partial class Home : Form

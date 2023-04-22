@@ -131,5 +131,15 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             GUIUtils.ReleaseCapture();
             GUIUtils.SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void changePassword()
+        {
+            
+        }
     }
 }

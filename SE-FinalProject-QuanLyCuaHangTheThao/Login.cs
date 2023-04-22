@@ -1,4 +1,5 @@
 ﻿using BUS;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
     public partial class Login : Form
     {
         private AccountBUS accountBus;
+        private Account account;
         public Login()
         {
             InitializeComponent();
@@ -108,6 +110,17 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             login();
         }
 
+        public Account getAccount()
+        {
+            if (accountBus != null)
+            {
+                return accountBus.getAccount();
+            }
+
+
+            return null;
+        }
+
         public void login()
         {
             String username = inUsername.Text;
@@ -127,10 +140,8 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                     MessageBox.Show("Sai tài khoản/mật khẩu");
                 } 
                 else
-                {
+                {   
                     this.Dispose();
-                    Home homepage = new Home();
-                    homepage.Show();
                 }
             }
         }

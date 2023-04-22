@@ -8,11 +8,12 @@ namespace DTO
 {
     public class Account
     {
-        public Account(string employeeID, string password, int count)
+        public Account(string employeeID, string password, int count, string role)
         {
             this.EmployeeID = employeeID;
             this.Password = password;
             this.Count = count;
+            this.Role = role;
         }
 
         public string EmployeeID { get; set; }
@@ -20,5 +21,7 @@ namespace DTO
         public string Password { get; set; }
 
         public int Count { get; set; }
+
+        public string Role { get; set; }
     }
 }

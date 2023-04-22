@@ -1,4 +1,5 @@
-﻿using SE_FinalProject_QuanLyCuaHangTheThao.Properties;
+﻿using DTO;
+using SE_FinalProject_QuanLyCuaHangTheThao.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,15 +23,40 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private Button featureBtn;
         private string name;
         private Form currentEmbedForm;
+        private Account account = null;
+
         public Home()
         {
             InitializeComponent();
+            Login loginPage = new Login();
+            if (account == null)
+            {
+                loginPage.ShowDialog();
+                account = loginPage.getAccount();
+                if (account != null)
+                {
+                    loadHome();
+                } 
+                else
+                {
+                    System.Environment.Exit(1);
+                }
+            }
+            else
+            {
+                loadHome();   
+            }
+        }
+
+        private void loadHome()
+        {
             const int LEFT_PANEL_WIDTH = 5;
             leftDisplayChooosePanel = new Panel();
             leftDisplayChooosePanel.Size = new Size(LEFT_PANEL_WIDTH, featHome.Height);
             featHome.Focus();
             openEmbedForm(new Homepage());
         }
+
 
         public void activateFeature(object feature, string featureName)
         {

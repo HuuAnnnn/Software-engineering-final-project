@@ -1,4 +1,5 @@
 ﻿using DAO;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,11 @@ namespace BUS
         public bool isAuthUser()
         {
             return accountDAO.isAuthUser();
+        }
+
+        public Account getAccount()
+        {
+            return accountDAO.getAccount();
         }
     }
 }

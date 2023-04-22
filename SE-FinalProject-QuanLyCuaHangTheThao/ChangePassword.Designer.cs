@@ -118,6 +118,7 @@
             this.btnChangePassword.TabIndex = 25;
             this.btnChangePassword.Text = "Đổi mật khẩu";
             this.btnChangePassword.UseVisualStyleBackColor = false;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // lblPassword
             // 

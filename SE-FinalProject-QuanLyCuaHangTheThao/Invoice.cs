@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,9 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             InitializeComponent();
             employeeBus = new EmployeeBUS();
 
-            displayCustomerInfo.Text = "";
+            customerInfo.Text = "";
             displayDate.Text = "";
-            displayInvoiceID.Text = "";
+            displayInvoiceID.Text = "123345";
             displayEmployeeInfo.Text = employeeBus.getEmployeeById(Program.curentAccount.EmployeeID).FullName;
             displayDiscount.Text = "";
             displayTotalPrice.Text = "";
@@ -33,18 +34,36 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             printDocument1.DefaultPageSettings.PaperSize = new PaperSize("A4", 827, 1169);
             printDocument1.DefaultPageSettings.PrinterResolution = new PrinterResolution { X = 100, Y = 100 };
-            printPreviewDialog1.Document = printDocument1;
-            printPreviewDialog1.ShowDialog();
+            printDocument1.DocumentName = displayInvoiceID.Text;
+            printDocument1.PrinterSettings.PrinterName = displayInvoiceID.Text;
+
+            printDialog1.Document = printDocument1;
+            printDialog1.PrinterSettings.PrintFileName = displayInvoiceID.Text;
+
+            if (printDialog1.ShowDialog() == DialogResult.OK)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Title = "Save As PDF";
+                sfd.Filter = "(*.pdf)|*.pdf";
+                sfd.InitialDirectory = @"C:\";
+                sfd.FileName = displayInvoiceID.Text;
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    printDocument1.PrinterSettings.PrintFileName = sfd.FileName;
+                    printDocument1.Print();
+                }
+            }
+
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("CỬA HÀNG BÁN DỤNG CỤ THỂ THAO", new Font("Quick Sand", 16, FontStyle.Bold), Brushes.Black, new Point(230, 15));
             e.Graphics.DrawString("HÓA ĐƠN", new Font("Quick Sand", 16, FontStyle.Bold), Brushes.Black, new Point(375, 71));
-            e.Graphics.DrawString("Số hóa đơn: " + "1231231", new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(10, 115));
-            e.Graphics.DrawString("Số hóa đơn: " + "1231231", new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(10, 156));
-            e.Graphics.DrawString("Số hóa đơn: " + "1231231", new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(596, 115));
-            e.Graphics.DrawString("Số hóa đơn: " + "1231231", new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(596, 156));
+            e.Graphics.DrawString("Số hóa đơn: " + displayInvoiceID.Text, new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(10, 115));
+            e.Graphics.DrawString("Khách hàng: " + customerInfo.Text, new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(10, 156));
+            e.Graphics.DrawString("Nhân viên: " + displayEmployeeInfo.Text, new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(596, 115));
+            e.Graphics.DrawString("Ngày lập: " + displayDate.Text, new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(596, 156));
 
             e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------", new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(10, 190));
             e.Graphics.DrawString("Tên sản phẩm", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(10, 217));

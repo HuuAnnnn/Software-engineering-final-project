@@ -16,9 +16,9 @@ namespace DAO
         public static void connect()
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder["Data Source"] = Configuration.DB_DATA_SOURCE;
+            builder["Data Source"] = DbConfiguration.DB_DATA_SOURCE;
             builder["integrated Security"] = true;
-            builder["Initial Catalog"] = Configuration.DB_CATELOG;
+            builder["Initial Catalog"] = DbConfiguration.DB_CATELOG;
             string connectionString = "initial catalog = QuanLyCuaHangDungCuTheThao; " +
                                         "data source = ANNNN\\SQLEXPRESS01; " +
                                         "integrated security=true";

@@ -20,7 +20,8 @@ namespace DAO
         public AccountDAO(String username, String password, int count)
         {
             Connection.connect();
-            account = new Account(username, password, count, "");
+            string hashedPassword = Configuration.Config.hash(password);
+            account = new Account(username, hashedPassword, count, "");
         }
 
         public bool isExistsUser()
@@ -32,15 +33,15 @@ namespace DAO
 
         public bool isAuthUser()
         {
-            String query = string.Format("SELECT * FROM Account WHERE username = '{0}' and password='{1}'", account.EmployeeID, account.Password);
+            string query = string.Format("SELECT * FROM Account WHERE username = '{0}' and password='{1}'", account.EmployeeID, account.Password);
             DataTable result = Connection.selectQuery(query);
-            return result.Rows.Count > 0;
+            return result.Rows.Count == 1;
         }
 
         public Account getAccount()
         {
             Account logedAccount = null;
-            String query = string.Format("SELECT * FROM ACCOUNT WHERE USERNAME = '{0}'", account.EmployeeID);
+            String query = string.Format("SELECT * FROM ACCOUNT WHERE USERNAME = '{0}' and password = '{1}'", account.EmployeeID, account.Password);
             DataTable queryResult = Connection.selectQuery(query);
             string username;
             string role;
@@ -55,6 +56,35 @@ namespace DAO
             }
 
             return logedAccount;
+        }
+
+        public bool isAuthenticationUser(string password)
+        {
+            String query = string.Format("SELECT * FROM ACCOUNT WHERE USERNAME = '{0}' AND PASSWORD = '{1}'", account.EmployeeID, password);
+            DataTable result = Connection.selectQuery(query);
+            return result.Rows.Count > 0;
+        }
+
+        public bool isTrueUser()
+        {
+            String query = string.Format("SELECT * FROM ACCOUNT WHERE USERNAME = '{0}' AND PASSWORD = '{1}'", account.EmployeeID, account.Password);
+            DataTable result = Connection.selectQuery(query);
+            return result.Rows.Count == 1;
+        }
+
+        public bool changePassword(string newPassword)
+        {
+            string hashPassword = Configuration.Config.hash(newPassword);
+            string query = "UPDATE ACCOUNT SET PASSWORD = @PASSWORD, TIMESCHANGEPASSWORD = TIMESCHANGEPASSWORD + 1 WHERE USERNAME = @USERNAME";
+            SqlCommand command = new SqlCommand(query);
+            command.Parameters.Add("@PASSWORD", SqlDbType.NVarChar, 255);
+            command.Parameters["@PASSWORD"].Value = hashPassword;
+            command.Parameters.Add("@USERNAME", SqlDbType.NVarChar, 50);
+            command.Parameters["@USERNAME"].Value = account.EmployeeID;
+
+            Connection.actionQuery(command);
+
+            return isAuthenticationUser(hashPassword);
         }
     }
 }

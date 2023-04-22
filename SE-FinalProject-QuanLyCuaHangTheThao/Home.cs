@@ -23,29 +23,34 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private Button featureBtn;
         private string name;
         private Form currentEmbedForm;
-        private Account account = null;
 
         public Home()
         {
             InitializeComponent();
             Login loginPage = new Login();
-            if (account == null)
+            if (Program.curentAccount == null)
             {
                 loginPage.ShowDialog();
-                account = loginPage.getAccount();
-                if (account != null)
+                Program.curentAccount = loginPage.getAccount();
+                if (Program.curentAccount != null)
                 {
-                    loadHome();
+                    if (Program.curentAccount.Count == 0)
+                    {
+                        ChangePassword changePasswordForm = new ChangePassword();
+                        changePasswordForm.ShowDialog();
+
+                        if (!changePasswordForm.isChangedPassword)
+                        {
+                            System.Environment.Exit(1);
+                        }
+                    } 
                 } 
                 else
                 {
                     System.Environment.Exit(1);
                 }
             }
-            else
-            {
-                loadHome();   
-            }
+            loadHome();
         }
 
         private void loadHome()

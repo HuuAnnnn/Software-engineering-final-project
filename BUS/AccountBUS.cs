@@ -35,5 +35,15 @@ namespace BUS
         {
             return accountDAO.getAccount();
         }
+
+        public bool changePassword(string newPassword)
+        {
+            return accountDAO.changePassword(newPassword);
+        }
+
+        public Boolean isAuthenticationUser()
+        {
+            return accountDAO.isTrueUser();
+        }
     }
 }

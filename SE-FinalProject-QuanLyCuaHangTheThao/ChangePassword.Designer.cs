@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.PictureBox pictureBox1;
             this.inPassword = new System.Windows.Forms.TextBox();
-            this.inUsername = new System.Windows.Forms.TextBox();
+            this.inCurrentPassword = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnChangePassword = new System.Windows.Forms.Button();
             this.lblPassword = new System.Windows.Forms.Label();
@@ -68,27 +68,27 @@
             this.inPassword.Multiline = true;
             this.inPassword.Name = "inPassword";
             this.inPassword.Size = new System.Drawing.Size(583, 38);
-            this.inPassword.TabIndex = 20;
-            this.inPassword.Text = "Mật khẩu";
+            this.inPassword.TabIndex = 22;
+            this.inPassword.Text = "Mật khẩu mới";
             this.inPassword.WordWrap = false;
             this.inPassword.Enter += new System.EventHandler(this.inPassword_Enter);
             this.inPassword.Leave += new System.EventHandler(this.inPassword_Leave);
             // 
-            // inUsername
+            // inCurrentPassword
             // 
-            this.inUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.inUsername.BackColor = System.Drawing.Color.Gainsboro;
-            this.inUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inUsername.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inUsername.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.inUsername.Location = new System.Drawing.Point(501, 186);
-            this.inUsername.Multiline = true;
-            this.inUsername.Name = "inUsername";
-            this.inUsername.Size = new System.Drawing.Size(583, 38);
-            this.inUsername.TabIndex = 21;
-            this.inUsername.Text = "Tên người dùng";
-            this.inUsername.Enter += new System.EventHandler(this.inUsername_Enter);
-            this.inUsername.Leave += new System.EventHandler(this.inUsername_Leave);
+            this.inCurrentPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.inCurrentPassword.BackColor = System.Drawing.Color.Gainsboro;
+            this.inCurrentPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inCurrentPassword.Font = new System.Drawing.Font("Quicksand", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inCurrentPassword.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.inCurrentPassword.Location = new System.Drawing.Point(501, 186);
+            this.inCurrentPassword.Multiline = true;
+            this.inCurrentPassword.Name = "inCurrentPassword";
+            this.inCurrentPassword.Size = new System.Drawing.Size(583, 38);
+            this.inCurrentPassword.TabIndex = 21;
+            this.inCurrentPassword.Text = "Mật khẩu hiện tại";
+            this.inCurrentPassword.Enter += new System.EventHandler(this.inCurrentPassword_Enter);
+            this.inCurrentPassword.Leave += new System.EventHandler(this.inCurrentPassword_Leave);
             // 
             // btnCancel
             // 
@@ -100,7 +100,7 @@
             this.btnCancel.Location = new System.Drawing.Point(754, 458);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(151, 54);
-            this.btnCancel.TabIndex = 26;
+            this.btnCancel.TabIndex = 25;
             this.btnCancel.Text = "Thoát";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -115,7 +115,7 @@
             this.btnChangePassword.Location = new System.Drawing.Point(933, 458);
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(151, 54);
-            this.btnChangePassword.TabIndex = 25;
+            this.btnChangePassword.TabIndex = 24;
             this.btnChangePassword.Text = "Đổi mật khẩu";
             this.btnChangePassword.UseVisualStyleBackColor = false;
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
@@ -216,7 +216,7 @@
             this.inConfirmPassword.Multiline = true;
             this.inConfirmPassword.Name = "inConfirmPassword";
             this.inConfirmPassword.Size = new System.Drawing.Size(583, 38);
-            this.inConfirmPassword.TabIndex = 27;
+            this.inConfirmPassword.TabIndex = 23;
             this.inConfirmPassword.Text = "Nhập lại mật khẩu";
             this.inConfirmPassword.WordWrap = false;
             this.inConfirmPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -245,7 +245,7 @@
             this.Controls.Add(this.inConfirmPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inPassword);
-            this.Controls.Add(this.inUsername);
+            this.Controls.Add(this.inCurrentPassword);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.lblPassword);
@@ -257,6 +257,7 @@
             this.Controls.Add(pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChangePassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.ChangePassword_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ChangePassword_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
@@ -268,7 +269,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox inPassword;
-        private System.Windows.Forms.TextBox inUsername;
+        private System.Windows.Forms.TextBox inCurrentPassword;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnChangePassword;
         private System.Windows.Forms.Label lblPassword;

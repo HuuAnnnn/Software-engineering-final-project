@@ -78,7 +78,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
         private void inPassword_Enter(object sender, EventArgs e)
         {
-            if (inPassword.Text == ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_PASSWORD)
+            if (inPassword.Text == ConfigGUI.DEFAULT_PLACEHOLDER_NEW_PASSWORD)
             {
                 inPassword.Text = "";
                 inPassword.PasswordChar = '•';
@@ -90,7 +90,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             if (inPassword.Text == "")
             {
-                inPassword.Text = ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_PASSWORD;
+                inPassword.Text = ConfigGUI.DEFAULT_PLACEHOLDER_NEW_PASSWORD;
                 inPassword.PasswordChar = '\0';
                 inPassword.ForeColor = Color.DarkGray;
             }
@@ -125,16 +125,15 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             String username = inUsername.Text;
             String password = inPassword.Text;
-            string hashPasword = Configuration.Config.hash(password);
             if (username.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_USERNAME) ||
-                password.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_PASSWORD) ||
+                password.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_NEW_PASSWORD) ||
                 username.Equals("") || password.Equals(""))
             {
                 MessageBox.Show("Vui lòng không để trống username/password");
             }
             else
             {
-                accountBus = new AccountBUS(username, hashPasword);
+                accountBus = new AccountBUS(username, password);
                 if (!accountBus.isAuthUser())
                 {
                     MessageBox.Show("Sai tài khoản/mật khẩu");

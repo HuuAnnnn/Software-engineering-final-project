@@ -42,12 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
-    <Compile Include="Configuration.cs" />
+    <Compile Include="DbConfiguration.cs" />
     <Compile Include="ProductDAO.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Configuration\Configuration.csproj">
+      <Project>{e96e9672-a0e7-46fb-85a5-def3009041ff}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{dac1c4ce-6858-4dc8-8040-2d65c91c2124}</Project>
       <Name>DTO</Name>

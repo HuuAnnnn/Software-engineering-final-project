@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 {
     public partial class ChangePassword : Form
     {
+        public bool isChangedPassword = false;
         public ChangePassword()
         {
             InitializeComponent();
@@ -69,7 +71,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
         private void inPassword_Enter(object sender, EventArgs e)
         {
-            if (inPassword.Text == ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_PASSWORD)
+            if (inPassword.Text == ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_NEW_PASSWORD)
             {
                 inPassword.Text = "";
                 inPassword.PasswordChar = '•';
@@ -81,28 +83,29 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             if (inPassword.Text == "")
             {
-                inPassword.Text = ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_PASSWORD;
+                inPassword.Text = ConfigGUI.DEFAULT_PLACEHOLDER_NEW_PASSWORD;
                 inPassword.PasswordChar = '\0';
                 inPassword.ForeColor = Color.DarkGray;
             }
         }
 
-        private void inUsername_Enter(object sender, EventArgs e)
+        private void inCurrentPassword_Enter(object sender, EventArgs e)
         {
-            if (inUsername.Text == ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_USERNAME)
+            if (inCurrentPassword.Text == ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_CURRENT_PASSWORD)
             {
-                inUsername.Text = "";
-                inUsername.ForeColor = Color.Black;
+                inCurrentPassword.Text = "";
+                inCurrentPassword.PasswordChar = '•';
+                inCurrentPassword.ForeColor = Color.Black;
             }
         }
 
-        private void inUsername_Leave(object sender, EventArgs e)
+        private void inCurrentPassword_Leave(object sender, EventArgs e)
         {
-            if (inUsername.Text == "")
+            if (inCurrentPassword.Text == "")
             {
-                inUsername.Text = ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_USERNAME;
-                inUsername.PasswordChar = '\0';
-                inUsername.ForeColor = Color.DarkGray;
+                inCurrentPassword.Text = ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_CURRENT_PASSWORD;
+                inCurrentPassword.PasswordChar = '\0';
+                inCurrentPassword.ForeColor = Color.DarkGray;
             }
         }
 
@@ -134,12 +137,56 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
-
+            changePassword();
         }
+
 
         public void changePassword()
         {
-            
+            string currentPassword = inCurrentPassword.Text;
+            string password = inPassword.Text;
+            string confirmPassword = inConfirmPassword.Text;
+
+            if (currentPassword.Equals("") || password.Equals("") || confirmPassword.Equals("")
+                || currentPassword.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_CURRENT_PASSWORD)
+                || password.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_NEW_PASSWORD)
+                || confirmPassword.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_CONFIRM_PASSWORD))
+            {
+                MessageBox.Show("Vui lòng không bỏ trống các trường");
+                return;
+            }
+
+            if (!password.Equals(confirmPassword))
+            {
+                MessageBox.Show("Nhập lại mật khẩu không khớp");
+                inConfirmPassword.ResetText();
+                return;
+            }
+
+            string username = Program.curentAccount.EmployeeID;
+            AccountBUS accountBUS = new AccountBUS(username, currentPassword);
+
+            if (!accountBUS.isAuthenticationUser())
+            {
+                MessageBox.Show("Mật khẩu không chính xác");
+                inPassword.ResetText();
+                inCurrentPassword.ResetText();
+                inConfirmPassword.ResetText();
+            }
+            else
+            {
+                bool isChangedAccount = accountBUS.changePassword(password);
+                if (isChangedAccount)
+                {
+                    MessageBox.Show("Thay đổi mật khẩu thành công");
+                    isChangedPassword = true;
+                    Dispose();
+                } 
+                else
+                {
+                    MessageBox.Show("Thay đổi mật khẩu không thành công. Vui lòng thử lại");
+                }
+            }
         }
     }
 }

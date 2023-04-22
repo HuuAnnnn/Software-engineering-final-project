@@ -207,6 +207,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private void featReceipt_Click(object sender, EventArgs e)
         {
             activateFeature(sender, "receipt");
+            openEmbedForm(new Invoice());
         }
     }
 }

@@ -81,7 +81,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Account](
 	[username] [nvarchar](50) NOT NULL,
-	[password] [nvarchar](100) NOT NULL,
+	[password] [nvarchar](255) NOT NULL,
 	[timesChangePassword] [int] NOT NULL,
 	[role] [varchar] (20) NOT NULL
 ) ON [PRIMARY]
@@ -121,5 +121,14 @@ GO
 use [QuanLyCuaHangDungCuTheThao]
 
 insert into account values ('Test', '123456', 0, 'Staff');
-update account set password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+update account set password = '8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414'
 where username = 'Test'
+
+update account set timesChangePassword = 0
+where username = 'Test'
+
+select * from account
+
+select * from employee
+
+insert into employee values ('Test', N'Nguy?n H?u An', 100000, N'Thu ngân', 0);

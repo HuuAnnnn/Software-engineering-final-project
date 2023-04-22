@@ -8,20 +8,23 @@ namespace DTO
 {
     public class Employee
     {
-        public Employee(string employeeID, string fullName, int fee, int department)
+        public Employee(string employeeID, string fullName, double salary, string department, int isDeleted)
         {
             this.EmployeeID = employeeID;
             this.FullName = fullName;
-            this.Fee = fee;
+            this.Salary = salary;
             this.Department = department;
+            this.IsDeleted = isDeleted;
         }
 
         public string EmployeeID { get; set; }
 
         public string FullName { get; set; }
 
-        public int Fee { get; set; }
+        public double Salary { get; set; }
 
-        public int Department { get; set; }
+        public string Department { get; set; }
+
+        public int IsDeleted { get; set; }
     }
 }

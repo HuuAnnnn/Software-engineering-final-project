@@ -117,6 +117,8 @@ USE [master]
 GO
 ALTER DATABASE [QuanLyCuaHangDungCuTheThao] SET  READ_WRITE 
 GO
-
+use [QuanLyCuaHangDungCuTheThao]
 
 insert into account values ('Test', '123456', 0);
+update account set password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+where username = 'Test'

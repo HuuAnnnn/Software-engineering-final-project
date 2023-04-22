@@ -112,7 +112,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             String username = inUsername.Text;
             String password = inPassword.Text;
-            string hashPasword = GUIUtils.hash(password);
+            string hashPasword = Configuration.Config.hash(password);
             if (username.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_USERNAME) ||
                 password.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_PASSWORD) ||
                 username.Equals("") || password.Equals(""))

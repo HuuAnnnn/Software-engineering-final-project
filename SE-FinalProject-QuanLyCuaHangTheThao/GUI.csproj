@@ -269,6 +269,10 @@
       <Project>{afa65d6c-6bc0-4a1a-a922-1c0095029a1b}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Configuration\Configuration.csproj">
+      <Project>{e96e9672-a0e7-46fb-85a5-def3009041ff}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

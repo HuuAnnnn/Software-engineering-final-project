@@ -12,8 +12,8 @@ namespace UnitTest
 
         public AccountTest()
         {
-            trueUser = new AccountBUS("Test", Configuration.Config.hash("123456"));
-            wrongUser = new AccountBUS("User1", Configuration.Config.hash("123456"));
+            trueUser = new AccountBUS("Test", "123456");
+            wrongUser = new AccountBUS("User1", "123456");
         }
 
         [TestMethod]

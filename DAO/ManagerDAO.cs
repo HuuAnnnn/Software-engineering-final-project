@@ -11,8 +11,6 @@ namespace DAO
 {
     public class ManagerDAO
     {
-        private Manager manager;
-
         public ManagerDAO() 
         {
             Connection.connect();

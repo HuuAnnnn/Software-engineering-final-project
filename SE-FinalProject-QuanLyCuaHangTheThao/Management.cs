@@ -5,11 +5,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-<<<<<<< Updated upstream
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
-=======
->>>>>>> Stashed changes
 using System.IO;
 using System.Linq;
 using System.Text;

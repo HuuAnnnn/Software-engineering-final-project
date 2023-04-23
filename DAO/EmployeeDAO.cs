@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Data;
-using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -24,12 +23,6 @@ namespace DAO
         {
             Connection.connect();
             employee = new Employee(employeeId, fullName, salary, department, isDeleted);
-        }
-
-        public EmployeeDAO(string employeeID, string fullName, double salary, DateTime birthday, string sex, string phone, string address, byte[] avatar, string department, int isDeleted)
-        {
-            Connection.connect();
-            employee = new Employee(employeeID, fullName, salary, birthday, sex, phone, address, avatar, department, isDeleted);
         }
 
         public Employee getEmployeeByID(string id)

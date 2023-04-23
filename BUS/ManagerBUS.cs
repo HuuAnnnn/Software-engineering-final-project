@@ -12,7 +12,7 @@ namespace BUS
     {
         public ManagerDAO managerDAO;
 
-        public ManagerBUS()
+        public ManagerBUS() 
         {
             managerDAO = new ManagerDAO();
         }
@@ -44,41 +44,6 @@ namespace BUS
         public DataTable selectReceiptSortDateCreatedDesc()
         {
             return managerDAO.selectReceiptSortDateCreatedDesc();
-        }
-
-        public DataTable selectAllEmployee()
-        {
-            return managerDAO.selectAllEmployee();
-        }
-
-        public void deleteEmployee(string employeeID)
-        {
-            managerDAO.deleteEmployee(employeeID);
-        }
-
-        public DataTable selectEmployeeDesc()
-        {
-            return managerDAO.selectEmployeeDesc();
-        }
-
-        public int checkEmployeeID(string employeeID)
-        {
-            return managerDAO.checkEmployeeID(employeeID);
-        }
-
-        public void insertEmployeeQuery(string employeeID, string fullName, double salary, DateTime birthday, string sex, string phone, string address, byte[] avatar, int department, int isDeleted)
-        {
-            managerDAO.insertEmployeeQuery(employeeID, fullName, salary, birthday, sex, phone, address, avatar, department, isDeleted);
-        }
-
-        public void updateEmployeeQuery(string employeeID, string fullName, DateTime birthday, string sex, string phone, string address, byte[] avatar, int department)
-        {
-            managerDAO.updateEmployeeQuery(employeeID, fullName, birthday, sex, phone, address, avatar, department);
-        }
-
-        public void insertAccount(string username, string password, int timeChangePassword, string role)
-        {
-            managerDAO.insertAccount(username, password, timeChangePassword, role);
         }
     }
 }

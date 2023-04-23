@@ -35,11 +35,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             this.inProductAmount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.inProductPrice = new System.Windows.Forms.TextBox();
@@ -59,7 +54,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.productAmout = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-=======
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -68,46 +62,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-=======
-            this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnInsertAvatar = new System.Windows.Forms.Button();
-            this.pbAvatar = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
->>>>>>> Stashed changes
-=======
-            this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnInsertAvatar = new System.Windows.Forms.Button();
-            this.pbAvatar = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
->>>>>>> Stashed changes
-=======
-            this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnInsertAvatar = new System.Windows.Forms.Button();
-            this.pbAvatar = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
->>>>>>> Stashed changes
-=======
-            this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnInsertAvatar = new System.Windows.Forms.Button();
-            this.pbAvatar = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
->>>>>>> Stashed changes
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
@@ -132,19 +86,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tbBonus = new System.Windows.Forms.TextBox();
             this.tbTotalSalary = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvReceipt = new System.Windows.Forms.DataGridView();
@@ -159,23 +100,16 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.chooserSortType = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-<<<<<<< Updated upstream
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-=======
+            //this.tabPage4 = new System.Windows.Forms.TabPage();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.pageSetupDialog2 = new System.Windows.Forms.PageSetupDialog();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
-=======
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
@@ -183,8 +117,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
->>>>>>> Stashed changes
-=======
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
@@ -192,8 +124,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
->>>>>>> Stashed changes
-=======
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
@@ -201,8 +131,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
->>>>>>> Stashed changes
-=======
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
@@ -210,7 +138,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
->>>>>>> Stashed changes
             this.label13 = new System.Windows.Forms.Label();
             this.cbDepartment = new System.Windows.Forms.ComboBox();
             this.pEmployeeColunmID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -221,40 +148,13 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.pEmployeeColoumPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pEmployeeColoumImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             ((System.ComponentModel.ISupportInitialize)(this.displayProductImage)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayNewProduct)).BeginInit();
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
@@ -262,19 +162,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceipt)).BeginInit();
@@ -346,45 +233,12 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.25448F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1220, 558);
             this.tableLayoutPanel4.TabIndex = 0;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            // 
-<<<<<<< Updated upstream
-            // inProductAmount
-            // 
             this.inProductAmount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inProductAmount.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inProductAmount.Location = new System.Drawing.Point(258, 67);
             this.inProductAmount.Name = "inProductAmount";
             this.inProductAmount.Size = new System.Drawing.Size(200, 26);
             this.inProductAmount.TabIndex = 9;
-            // 
-            // label4
-=======
-            // dgvEmployee
->>>>>>> Stashed changes
-=======
-            // 
-            // dgvEmployee
->>>>>>> Stashed changes
-            // 
-=======
-            // 
-            // dgvEmployee
-            // 
->>>>>>> Stashed changes
-=======
-            // 
-            // dgvEmployee
-            // 
->>>>>>> Stashed changes
-=======
-            // 
-            // dgvEmployee
-            // 
->>>>>>> Stashed changes
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pEmployeeColunmID,
@@ -402,45 +256,12 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.dgvEmployee.Size = new System.Drawing.Size(1208, 280);
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellContentClick);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            // 
-<<<<<<< Updated upstream
-            // inProductPrice
-            // 
             this.inProductPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inProductPrice.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inProductPrice.Location = new System.Drawing.Point(258, 35);
             this.inProductPrice.Name = "inProductPrice";
             this.inProductPrice.Size = new System.Drawing.Size(200, 26);
             this.inProductPrice.TabIndex = 7;
-            // 
-            // displayProductImage
-=======
-            // tableLayoutPanel5
->>>>>>> Stashed changes
-=======
-            // 
-            // tableLayoutPanel5
->>>>>>> Stashed changes
-            // 
-=======
-            // 
-            // tableLayoutPanel5
-            // 
->>>>>>> Stashed changes
-=======
-            // 
-            // tableLayoutPanel5
-            // 
->>>>>>> Stashed changes
-=======
-            // 
-            // tableLayoutPanel5
-            // 
->>>>>>> Stashed changes
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.13647F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.86353F));
@@ -534,10 +355,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label5.Size = new System.Drawing.Size(72, 17);
             this.label5.TabIndex = 1;
             this.label5.Text = "Điện thoại";
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             // 
             // inProductName
             // 
@@ -547,14 +364,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.inProductName.Name = "inProductName";
             this.inProductName.Size = new System.Drawing.Size(200, 26);
             this.inProductName.TabIndex = 6;
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             // 
             // label7
             // 
@@ -564,12 +373,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label7.Size = new System.Drawing.Size(51, 17);
             this.label7.TabIndex = 3;
             this.label7.Text = "Địa chỉ";
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            // 
-<<<<<<< Updated upstream
             // cbProductCategory
             // 
             this.cbProductCategory.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -639,13 +442,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvDisplayNewProduct
-=======
-            // tbPhone
->>>>>>> Stashed changes
-=======
-            // 
-            // tbPhone
->>>>>>> Stashed changes
             // 
             this.tbPhone.Location = new System.Drawing.Point(343, 3);
             this.tbPhone.Name = "tbPhone";
@@ -815,8 +611,90 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             // 
             // btnSave
             // 
->>>>>>> Stashed changes
-=======
+            // tbPhone
+            // 
+            this.tbPhone.Location = new System.Drawing.Point(343, 3);
+            this.tbPhone.Name = "tbPhone";
+            this.tbPhone.Size = new System.Drawing.Size(185, 22);
+            this.tbPhone.TabIndex = 5;
+            // 
+            // tbAddress
+            // 
+            this.tbAddress.Location = new System.Drawing.Point(343, 60);
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(185, 22);
+            this.tbAddress.TabIndex = 6;
+            // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 2;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.Controls.Add(this.btnDelete, 0, 1);
+            this.tableLayoutPanel14.Controls.Add(this.btnCancel, 0, 1);
+            this.tableLayoutPanel14.Controls.Add(this.btnAdd, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.btnSave, 0, 0);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(343, 170);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 2;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(185, 80);
+            this.tableLayoutPanel14.TabIndex = 15;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(3, 44);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(86, 33);
+            this.btnDelete.TabIndex = 37;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(95, 44);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(87, 33);
+            this.btnCancel.TabIndex = 36;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(3, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(86, 35);
+            this.btnAdd.TabIndex = 35;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnSave
+            // 
             // 
             // tbPhone
             // 
@@ -902,94 +780,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             // 
             // btnSave
             // 
->>>>>>> Stashed changes
-=======
-            // 
-            // tbPhone
-            // 
-            this.tbPhone.Location = new System.Drawing.Point(343, 3);
-            this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(185, 22);
-            this.tbPhone.TabIndex = 5;
-            // 
-            // tbAddress
-            // 
-            this.tbAddress.Location = new System.Drawing.Point(343, 60);
-            this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(185, 22);
-            this.tbAddress.TabIndex = 6;
-            // 
-            // tableLayoutPanel14
-            // 
-            this.tableLayoutPanel14.ColumnCount = 2;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Controls.Add(this.btnDelete, 0, 1);
-            this.tableLayoutPanel14.Controls.Add(this.btnCancel, 0, 1);
-            this.tableLayoutPanel14.Controls.Add(this.btnAdd, 0, 0);
-            this.tableLayoutPanel14.Controls.Add(this.btnSave, 0, 0);
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(343, 170);
-            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-            this.tableLayoutPanel14.RowCount = 2;
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(185, 80);
-            this.tableLayoutPanel14.TabIndex = 15;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(3, 44);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 33);
-            this.btnDelete.TabIndex = 37;
-            this.btnDelete.Text = "Xóa";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(95, 44);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(87, 33);
-            this.btnCancel.TabIndex = 36;
-            this.btnCancel.Text = "Hủy";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(3, 3);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(86, 35);
-            this.btnAdd.TabIndex = 35;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnSave
-            // 
->>>>>>> Stashed changes
             this.btnSave.BackColor = System.Drawing.Color.OrangeRed;
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSave.FlatAppearance.BorderSize = 0;
@@ -1327,8 +1117,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label3.TabIndex = 1;
             this.label3.Text = "Sắp xếp theo:";
             // 
-<<<<<<< Updated upstream
-=======
             // label1
             // 
             this.label1.AutoSize = true;
@@ -1355,7 +1143,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
->>>>>>> Stashed changes
             // dtpStart
             // 
             this.dtpStart.BorderColor = System.Drawing.Color.Gray;
@@ -1384,10 +1171,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.dtpEnd.TabIndex = 1;
             this.dtpEnd.TextColor = System.Drawing.Color.Black;
             // 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             // label1
             // 
             this.label1.AutoSize = true;
@@ -1410,7 +1193,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             // 
             // imageList1
             // 
-<<<<<<< Updated upstream
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
@@ -1418,7 +1200,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Tính lương";
             this.tabPage4.UseVisualStyleBackColor = true;
-=======
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
@@ -1451,14 +1232,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.dtpEnd.TabIndex = 1;
             this.dtpEnd.TextColor = System.Drawing.Color.Black;
             // 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             // label13
             // 
             this.label13.AutoSize = true;
@@ -1535,19 +1308,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 125;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             // 
             // Management
             // 
@@ -1562,24 +1322,10 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.displayProductImage)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayNewProduct)).EndInit();
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -1589,19 +1335,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceipt)).EndInit();

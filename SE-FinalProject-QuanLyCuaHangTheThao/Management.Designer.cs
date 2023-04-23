@@ -39,11 +39,18 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.inProductAmount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.inProductPrice = new System.Windows.Forms.TextBox();
             this.displayProductImage = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.inProductName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.cbProductCategory = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnInsertProduct = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.dgvDisplayNewProduct = new System.Windows.Forms.DataGridView();
             this.productId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,30 +72,23 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.chooserSortType = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
+            this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.cbProductCategory = new System.Windows.Forms.ComboBox();
-            this.inProductName = new System.Windows.Forms.TextBox();
-            this.inProductPrice = new System.Windows.Forms.TextBox();
-            this.inProductAmount = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnInsertProduct = new System.Windows.Forms.Button();
-            this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
-            this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.displayProductImage)).BeginInit();
+            this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayNewProduct)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReceipt)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // printDialog1
@@ -196,6 +196,15 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel4.Size = new System.Drawing.Size(461, 459);
             this.tableLayoutPanel4.TabIndex = 5;
             // 
+            // inProductAmount
+            // 
+            this.inProductAmount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inProductAmount.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inProductAmount.Location = new System.Drawing.Point(258, 67);
+            this.inProductAmount.Name = "inProductAmount";
+            this.inProductAmount.Size = new System.Drawing.Size(200, 26);
+            this.inProductAmount.TabIndex = 9;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -207,6 +216,15 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label4.TabIndex = 8;
             this.label4.Text = "Số lượng";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // inProductPrice
+            // 
+            this.inProductPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inProductPrice.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inProductPrice.Location = new System.Drawing.Point(258, 35);
+            this.inProductPrice.Name = "inProductPrice";
+            this.inProductPrice.Size = new System.Drawing.Size(200, 26);
+            this.inProductPrice.TabIndex = 7;
             // 
             // displayProductImage
             // 
@@ -244,6 +262,15 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label6.Text = "Giá";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // inProductName
+            // 
+            this.inProductName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inProductName.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inProductName.Location = new System.Drawing.Point(258, 3);
+            this.inProductName.Name = "inProductName";
+            this.inProductName.Size = new System.Drawing.Size(200, 26);
+            this.inProductName.TabIndex = 6;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -255,6 +282,74 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label7.TabIndex = 10;
             this.label7.Text = "Loại";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cbProductCategory
+            // 
+            this.cbProductCategory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbProductCategory.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProductCategory.FormattingEnabled = true;
+            this.cbProductCategory.Items.AddRange(new object[] {
+            "Áo",
+            "Quần",
+            "Giày thể thao",
+            "Balo",
+            "Gậy GOLF",
+            "Vợt Tennis",
+            "Bóng bàn",
+            "Câu cá",
+            "Hộp thực phẩm",
+            "Băng bảo vệ"});
+            this.cbProductCategory.Location = new System.Drawing.Point(258, 101);
+            this.cbProductCategory.Name = "cbProductCategory";
+            this.cbProductCategory.Size = new System.Drawing.Size(200, 31);
+            this.cbProductCategory.TabIndex = 11;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel4.SetColumnSpan(this.tableLayoutPanel5, 3);
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.btnInsertProduct, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 185);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(455, 63);
+            this.tableLayoutPanel5.TabIndex = 13;
+            // 
+            // btnInsertProduct
+            // 
+            this.btnInsertProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInsertProduct.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.btnInsertProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsertProduct.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertProduct.Location = new System.Drawing.Point(230, 3);
+            this.btnInsertProduct.Name = "btnInsertProduct";
+            this.btnInsertProduct.Size = new System.Drawing.Size(222, 57);
+            this.btnInsertProduct.TabIndex = 18;
+            this.btnInsertProduct.Text = "Thêm sản phẩm";
+            this.btnInsertProduct.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.OrangeRed;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(221, 57);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Xuất phiếu nhập hàng";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvDisplayNewProduct
             // 
@@ -479,6 +574,36 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label3.TabIndex = 1;
             this.label3.Text = "Sắp xếp theo:";
             // 
+            // dtpStart
+            // 
+            this.dtpStart.BorderColor = System.Drawing.Color.Gray;
+            this.dtpStart.BorderSize = 0;
+            this.dtpStart.FillColor = System.Drawing.Color.LightGray;
+            this.dtpStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpStart.Location = new System.Drawing.Point(2, 45);
+            this.dtpStart.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpStart.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpStart.Name = "dtpStart";
+            this.dtpStart.Size = new System.Drawing.Size(151, 35);
+            this.dtpStart.TabIndex = 0;
+            this.dtpStart.TextColor = System.Drawing.Color.Black;
+            // 
+            // dtpEnd
+            // 
+            this.dtpEnd.BorderColor = System.Drawing.Color.Gray;
+            this.dtpEnd.BorderSize = 0;
+            this.dtpEnd.FillColor = System.Drawing.Color.LightGray;
+            this.dtpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEnd.Location = new System.Drawing.Point(275, 45);
+            this.dtpEnd.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpEnd.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(156, 35);
+            this.dtpEnd.TabIndex = 1;
+            this.dtpEnd.TextColor = System.Drawing.Color.Black;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -511,130 +636,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tabPage4.Text = "Tính lương";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // cbProductCategory
-            // 
-            this.cbProductCategory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbProductCategory.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbProductCategory.FormattingEnabled = true;
-            this.cbProductCategory.Items.AddRange(new object[] {
-            "Áo",
-            "Quần",
-            "Giày thể thao",
-            "Balo",
-            "Gậy GOLF",
-            "Vợt Tennis",
-            "Bóng bàn",
-            "Câu cá",
-            "Hộp thực phẩm",
-            "Băng bảo vệ"});
-            this.cbProductCategory.Location = new System.Drawing.Point(258, 101);
-            this.cbProductCategory.Name = "cbProductCategory";
-            this.cbProductCategory.Size = new System.Drawing.Size(200, 31);
-            this.cbProductCategory.TabIndex = 11;
-            // 
-            // inProductName
-            // 
-            this.inProductName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inProductName.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inProductName.Location = new System.Drawing.Point(258, 3);
-            this.inProductName.Name = "inProductName";
-            this.inProductName.Size = new System.Drawing.Size(200, 26);
-            this.inProductName.TabIndex = 6;
-            // 
-            // inProductPrice
-            // 
-            this.inProductPrice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inProductPrice.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inProductPrice.Location = new System.Drawing.Point(258, 35);
-            this.inProductPrice.Name = "inProductPrice";
-            this.inProductPrice.Size = new System.Drawing.Size(200, 26);
-            this.inProductPrice.TabIndex = 7;
-            // 
-            // inProductAmount
-            // 
-            this.inProductAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inProductAmount.Font = new System.Drawing.Font("Quicksand SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inProductAmount.Location = new System.Drawing.Point(258, 67);
-            this.inProductAmount.Name = "inProductAmount";
-            this.inProductAmount.Size = new System.Drawing.Size(200, 26);
-            this.inProductAmount.TabIndex = 9;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel4.SetColumnSpan(this.tableLayoutPanel5, 3);
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Controls.Add(this.btnInsertProduct, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 185);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(455, 63);
-            this.tableLayoutPanel5.TabIndex = 13;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.OrangeRed;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(221, 57);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Xuất phiếu nhập hàng";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnInsertProduct
-            // 
-            this.btnInsertProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnInsertProduct.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
-            this.btnInsertProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsertProduct.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertProduct.Location = new System.Drawing.Point(230, 3);
-            this.btnInsertProduct.Name = "btnInsertProduct";
-            this.btnInsertProduct.Size = new System.Drawing.Size(222, 57);
-            this.btnInsertProduct.TabIndex = 18;
-            this.btnInsertProduct.Text = "Thêm sản phẩm";
-            this.btnInsertProduct.UseVisualStyleBackColor = true;
-            // 
-            // dtpStart
-            // 
-            this.dtpStart.BorderColor = System.Drawing.Color.Gray;
-            this.dtpStart.BorderSize = 0;
-            this.dtpStart.FillColor = System.Drawing.Color.LightGray;
-            this.dtpStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStart.Location = new System.Drawing.Point(2, 45);
-            this.dtpStart.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpStart.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dtpStart.Name = "dtpStart";
-            this.dtpStart.Size = new System.Drawing.Size(151, 35);
-            this.dtpStart.TabIndex = 0;
-            this.dtpStart.TextColor = System.Drawing.Color.Black;
-            // 
-            // dtpEnd
-            // 
-            this.dtpEnd.BorderColor = System.Drawing.Color.Gray;
-            this.dtpEnd.BorderSize = 0;
-            this.dtpEnd.FillColor = System.Drawing.Color.LightGray;
-            this.dtpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEnd.Location = new System.Drawing.Point(275, 45);
-            this.dtpEnd.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpEnd.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dtpEnd.Name = "dtpEnd";
-            this.dtpEnd.Size = new System.Drawing.Size(156, 35);
-            this.dtpEnd.TabIndex = 1;
-            this.dtpEnd.TextColor = System.Drawing.Color.Black;
-            // 
             // Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -651,6 +652,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.displayProductImage)).EndInit();
+            this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayNewProduct)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -659,7 +661,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

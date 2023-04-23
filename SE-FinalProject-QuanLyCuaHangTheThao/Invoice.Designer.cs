@@ -165,9 +165,9 @@
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 2);
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.96791F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.03209F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 184F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 3, 0);
@@ -181,7 +181,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(906, 77);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
@@ -192,7 +192,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 45);
+            this.label1.Size = new System.Drawing.Size(179, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số hóa đơn";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,10 +202,10 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 45);
+            this.label2.Location = new System.Drawing.Point(2, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 32);
+            this.label2.Size = new System.Drawing.Size(181, 41);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên khách hàng";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,10 +215,10 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(648, 0);
+            this.label3.Location = new System.Drawing.Point(611, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 45);
+            this.label3.Size = new System.Drawing.Size(108, 36);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nhân viên";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -228,10 +228,10 @@
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(648, 45);
+            this.label4.Location = new System.Drawing.Point(611, 36);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 32);
+            this.label4.Size = new System.Drawing.Size(108, 41);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ngày lập";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,7 +243,7 @@
             this.displayInvoiceID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayInvoiceID.Location = new System.Drawing.Point(188, 0);
             this.displayInvoiceID.Name = "displayInvoiceID";
-            this.displayInvoiceID.Size = new System.Drawing.Size(297, 45);
+            this.displayInvoiceID.Size = new System.Drawing.Size(296, 36);
             this.displayInvoiceID.TabIndex = 4;
             this.displayInvoiceID.Text = "displayInvoiceID";
             this.displayInvoiceID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -253,10 +253,10 @@
             this.displayEmployeeInfo.AutoSize = true;
             this.displayEmployeeInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayEmployeeInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayEmployeeInfo.Location = new System.Drawing.Point(724, 0);
+            this.displayEmployeeInfo.Location = new System.Drawing.Point(723, 0);
             this.displayEmployeeInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.displayEmployeeInfo.Name = "displayEmployeeInfo";
-            this.displayEmployeeInfo.Size = new System.Drawing.Size(180, 45);
+            this.displayEmployeeInfo.Size = new System.Drawing.Size(181, 36);
             this.displayEmployeeInfo.TabIndex = 6;
             this.displayEmployeeInfo.Text = "label11";
             this.displayEmployeeInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -266,10 +266,10 @@
             this.displayDate.AutoSize = true;
             this.displayDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayDate.Location = new System.Drawing.Point(724, 45);
+            this.displayDate.Location = new System.Drawing.Point(723, 36);
             this.displayDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.displayDate.Name = "displayDate";
-            this.displayDate.Size = new System.Drawing.Size(180, 32);
+            this.displayDate.Size = new System.Drawing.Size(181, 41);
             this.displayDate.TabIndex = 7;
             this.displayDate.Text = "label12";
             this.displayDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -282,12 +282,12 @@
             this.tableLayoutPanel6.Controls.Add(this.customerInfo, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.btnCustomerCheck, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(187, 47);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(187, 38);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(299, 28);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(298, 37);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // customerInfo
@@ -299,7 +299,7 @@
             this.customerInfo.Location = new System.Drawing.Point(2, 2);
             this.customerInfo.Margin = new System.Windows.Forms.Padding(2);
             this.customerInfo.Name = "customerInfo";
-            this.customerInfo.Size = new System.Drawing.Size(227, 26);
+            this.customerInfo.Size = new System.Drawing.Size(226, 26);
             this.customerInfo.TabIndex = 9;
             // 
             // btnCustomerCheck
@@ -309,10 +309,10 @@
             this.btnCustomerCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomerCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerCheck.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerCheck.Location = new System.Drawing.Point(233, 2);
+            this.btnCustomerCheck.Location = new System.Drawing.Point(232, 2);
             this.btnCustomerCheck.Margin = new System.Windows.Forms.Padding(2);
             this.btnCustomerCheck.Name = "btnCustomerCheck";
-            this.btnCustomerCheck.Size = new System.Drawing.Size(64, 24);
+            this.btnCustomerCheck.Size = new System.Drawing.Size(64, 33);
             this.btnCustomerCheck.TabIndex = 10;
             this.btnCustomerCheck.Text = "Ok";
             this.btnCustomerCheck.UseVisualStyleBackColor = false;

@@ -100,7 +100,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.60617F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.39383F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
@@ -120,10 +120,10 @@
             this.panel5.Controls.Add(this.totalInCart);
             this.panel5.Controls.Add(this.checkCart);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(1108, 4);
+            this.panel5.Location = new System.Drawing.Point(1106, 4);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(125, 142);
+            this.panel5.Size = new System.Drawing.Size(127, 142);
             this.panel5.TabIndex = 37;
             // 
             // label9
@@ -133,7 +133,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(2, -1);
+            this.label9.Location = new System.Drawing.Point(3, -1);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(119, 34);
@@ -160,7 +160,7 @@
             this.checkCart.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkCart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkCart.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.trolley;
-            this.checkCart.Location = new System.Drawing.Point(6, 37);
+            this.checkCart.Location = new System.Drawing.Point(7, 37);
             this.checkCart.Margin = new System.Windows.Forms.Padding(4);
             this.checkCart.Name = "checkCart";
             this.checkCart.Size = new System.Drawing.Size(109, 105);
@@ -178,7 +178,7 @@
             this.panel4.Location = new System.Drawing.Point(264, 4);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(836, 142);
+            this.panel4.Size = new System.Drawing.Size(834, 142);
             this.panel4.TabIndex = 36;
             // 
             // tableLayoutPanel2
@@ -187,7 +187,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.238185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.76182F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.inProductSearch, 1, 0);
@@ -197,14 +197,14 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(834, 47);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(832, 47);
             this.tableLayoutPanel2.TabIndex = 35;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.search;
-            this.pictureBox3.Location = new System.Drawing.Point(5, 8);
+            this.pictureBox3.Location = new System.Drawing.Point(6, 8);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 31);
@@ -220,9 +220,9 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(498, 4);
+            this.btnSearch.Location = new System.Drawing.Point(696, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(124, 30);
+            this.btnSearch.Size = new System.Drawing.Size(132, 39);
             this.btnSearch.TabIndex = 32;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -233,10 +233,10 @@
             this.inProductSearch.BackColor = System.Drawing.Color.White;
             this.inProductSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inProductSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inProductSearch.Location = new System.Drawing.Point(46, 5);
+            this.inProductSearch.Location = new System.Drawing.Point(49, 5);
             this.inProductSearch.Margin = new System.Windows.Forms.Padding(4);
             this.inProductSearch.Name = "inProductSearch";
-            this.inProductSearch.Size = new System.Drawing.Size(605, 37);
+            this.inProductSearch.Size = new System.Drawing.Size(639, 37);
             this.inProductSearch.TabIndex = 31;
             this.inProductSearch.Text = "";
             // 
@@ -250,7 +250,7 @@
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(834, 34);
+            this.label4.Size = new System.Drawing.Size(832, 34);
             this.label4.TabIndex = 34;
             this.label4.Text = "TÌM KIẾM";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -263,7 +263,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(834, 57);
+            this.groupBox1.Size = new System.Drawing.Size(832, 57);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bộ lọc";
@@ -292,7 +292,7 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(826, 34);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(824, 34);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // chooseSortType
@@ -304,10 +304,10 @@
             this.chooseSortType.Items.AddRange(new object[] {
             "Theo giá giảm",
             "Theo giá tăng"});
-            this.chooseSortType.Location = new System.Drawing.Point(293, 4);
+            this.chooseSortType.Location = new System.Drawing.Point(292, 4);
             this.chooseSortType.Margin = new System.Windows.Forms.Padding(4);
             this.chooseSortType.Name = "chooseSortType";
-            this.chooseSortType.Size = new System.Drawing.Size(150, 24);
+            this.chooseSortType.Size = new System.Drawing.Size(149, 24);
             this.chooseSortType.TabIndex = 41;
             this.chooseSortType.SelectedIndexChanged += new System.EventHandler(this.chooseSortType_SelectedIndexChanged);
             // 
@@ -331,7 +331,7 @@
             this.chooseType.Location = new System.Drawing.Point(67, 4);
             this.chooseType.Margin = new System.Windows.Forms.Padding(4);
             this.chooseType.Name = "chooseType";
-            this.chooseType.Size = new System.Drawing.Size(118, 24);
+            this.chooseType.Size = new System.Drawing.Size(117, 24);
             this.chooseType.TabIndex = 40;
             this.chooseType.SelectedIndexChanged += new System.EventHandler(this.chooseType_SelectedIndexChanged);
             // 
@@ -339,10 +339,10 @@
             // 
             this.displayLimitPriceRange.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayLimitPriceRange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayLimitPriceRange.Location = new System.Drawing.Point(689, 4);
+            this.displayLimitPriceRange.Location = new System.Drawing.Point(686, 4);
             this.displayLimitPriceRange.Margin = new System.Windows.Forms.Padding(4);
             this.displayLimitPriceRange.Name = "displayLimitPriceRange";
-            this.displayLimitPriceRange.Size = new System.Drawing.Size(133, 24);
+            this.displayLimitPriceRange.Size = new System.Drawing.Size(134, 24);
             this.displayLimitPriceRange.TabIndex = 39;
             this.displayLimitPriceRange.Text = "đ100,000,000.00";
             this.displayLimitPriceRange.KeyUp += new System.Windows.Forms.KeyEventHandler(this.displayLimitPriceRange_KeyUp);
@@ -352,7 +352,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(451, 7);
+            this.label7.Location = new System.Drawing.Point(449, 7);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 20);
@@ -362,11 +362,11 @@
             // priceRange
             // 
             this.priceRange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.priceRange.Location = new System.Drawing.Point(574, 4);
+            this.priceRange.Location = new System.Drawing.Point(572, 4);
             this.priceRange.Margin = new System.Windows.Forms.Padding(4);
             this.priceRange.Maximum = 100000000;
             this.priceRange.Name = "priceRange";
-            this.priceRange.Size = new System.Drawing.Size(107, 26);
+            this.priceRange.Size = new System.Drawing.Size(106, 26);
             this.priceRange.TabIndex = 38;
             this.priceRange.TickStyle = System.Windows.Forms.TickStyle.None;
             this.priceRange.Scroll += new System.EventHandler(this.priceRange_Scroll);
@@ -388,7 +388,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(193, 7);
+            this.label6.Location = new System.Drawing.Point(192, 7);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 20);

@@ -8,6 +8,8 @@ namespace DTO
 {
     public class Employee
     {
+        public Employee() { }
+
         public Employee(string employeeID, string fullName, double salary, string department, int isDeleted)
         {
             this.EmployeeID = employeeID;

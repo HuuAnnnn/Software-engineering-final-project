@@ -72,17 +72,17 @@ namespace DAO
 
         public DataTable selectTotalRevenueInDay(string startDate, string endDate)
         {
-            string selectQuery = "SELECT t1.dateCreated, SUM(t1.total) as totalInDay"
-                                + " FROM(SELECT * FROM Receipt WHERE dateCreated BETWEEN '" + startDate + "' AND '" + endDate + "') as t1"
-                                + " GROUP BY t1.dateCreated"
-                                + " ORDER BY t1.dateCreated Desc";
+            string selectQuery = "SELECT t1.dateCreate, SUM(t1.total) as totalInDay"
+                                + " FROM(SELECT * FROM Receipt WHERE dateCreate BETWEEN '" + startDate + "' AND '" + endDate + "') as t1"
+                                + " GROUP BY t1.dateCreate"
+                                + " ORDER BY t1.dateCreate Desc";
             
             return Connection.selectQuery(selectQuery);
         }
 
         public DataTable selectTop10Product(string startDate, string endDate)
         {
-            string selectQuery = "SELECT TOP 10 t4.*, Product.productName FROM Product, (SELECT t3.productID, SUM(t3.total) as totalOfProduct FROM(SELECT t2.*, Product.productName FROM Product, (SELECT ReceiptLine.* FROM ReceiptLine, (SELECT receiptID FROM Receipt WHERE dateCreated BETWEEN '" + startDate + "' AND '" + endDate + "') as t1 WHERE ReceiptLine.receiptID = t1.receiptID) as t2 WHERE t2.productID = Product.productID) as t3 GROUP BY t3.productID) as t4 WHERE t4.productID = Product.productID ORDER BY t4.totalOfProduct Desc";
+            string selectQuery = "SELECT TOP 10 t4.*, Product.productName FROM Product, (SELECT t3.productID, SUM(t3.total) as totalOfProduct FROM(SELECT t2.*, Product.productName FROM Product, (SELECT ReceiptLine.* FROM ReceiptLine, (SELECT id FROM Receipt WHERE dateCreate BETWEEN '" + startDate + "' AND '" + endDate + "') as t1 WHERE ReceiptLine.orderId = t1.id) as t2 WHERE t2.productID = Product.productID) as t3 GROUP BY t3.productID) as t4 WHERE t4.productID = Product.productID ORDER BY t4.totalOfProduct Desc";
 
             return Connection.selectQuery(selectQuery);
         }
@@ -101,9 +101,8 @@ namespace DAO
                     row["customerId"].ToString(),
                     null,
                     row["receiptState"].ToString()
-                 ); ;
+                 );;
             }
-
             return receipt;
         }
     }

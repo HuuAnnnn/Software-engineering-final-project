@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
-    <Compile Include="DattaTable.cs" />
     <Compile Include="CustomerDAO.cs" />
+    <Compile Include="ManagerDAO.cs" />
     <Compile Include="DbConfiguration.cs" />
     <Compile Include="EmployeeDAO.cs" />
     <Compile Include="ProductDAO.cs" />

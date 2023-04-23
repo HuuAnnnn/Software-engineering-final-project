@@ -51,7 +51,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                 int value = 0;
                 foreach (DataRow row in tableRevenueInDay.Select())
                 {
-                    time = Convert.ToDateTime(row["dateCreated"]).ToString();
+                    time = Convert.ToDateTime(row["dateCreate"]).ToString();
                     label = time.Split(' ')[0];
                     value = Convert.ToInt32(row["totalInDay"]);
                     charRevenue.Series["Revenue"].Points.AddXY(label, value);
@@ -65,7 +65,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                 int value = 0;
                 foreach (DataTable table in tables)
                 {
-                    time = Convert.ToDateTime(table.Rows[0]["dateCreated"]).ToString();
+                    time = Convert.ToDateTime(table.Rows[0]["dateCreate"]).ToString();
                     firstDate = time.Split(' ')[0];
                     value = getRevenueInBatch(table);
                     charRevenue.Series["Revenue"].Points.AddXY(firstDate, value);
@@ -133,6 +133,20 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                 value = Convert.ToInt32(row["totalOfProduct"].ToString());
                 charProduct.Series["Series1"].Points.AddXY(label, value);
             } 
+        }
+
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+            /*using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook)
+                    }
+                }
+            }*/
         }
     }
 }

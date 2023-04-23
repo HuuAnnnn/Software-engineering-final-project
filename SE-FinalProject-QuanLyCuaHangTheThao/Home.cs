@@ -191,6 +191,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private void button5_Click(object sender, EventArgs e)
         {
             activateFeature(sender, "management");
+            openEmbedForm(new Management());
         }
 
         private void featTrolley_Click(object sender, EventArgs e)

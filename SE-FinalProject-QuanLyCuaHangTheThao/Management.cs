@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
     {
         private ManagerBUS managerBUS;
         private string productFileName;
+        private ImportReceipt importReceipt;
         public Management()
         {
             InitializeComponent();
@@ -170,7 +172,8 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
             ProductBUS productBus = null;
             ImportReceiptBUS importReceiptBus = new ImportReceiptBUS(DateTime.Now.ToString("yyyy-MM-dd"), total, true, Program.curentAccount.EmployeeID);
-            ImportReceipt importReceipt = importReceiptBus.getImportReceipt();
+            importReceiptBus.createNewReceipt();
+            importReceipt = importReceiptBus.getImportReceipt();
             ImportLineReceiptLineBUS importLineReceiptBus = null;
 
             foreach(DataGridViewRow row in dgvDisplayNewProduct.Rows)
@@ -202,9 +205,69 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                 double unitToalPrice = int.Parse(row.Cells[3].Value.ToString()) * double.Parse(row.Cells[2].Value.ToString());
                 importLineReceiptBus = new ImportLineReceiptLineBUS(importReceipt.ImportReceiptID, product.ProductId, int.Parse(row.Cells[3].Value.ToString()), unitToalPrice);
                 importLineReceiptBus.insertImportReceiptLine();
+            }
 
-                MessageBox.Show("Thêm các sản phẩm thành công");
-                dgvDisplayNewProduct.Rows.Clear();
+            printDocument1.DefaultPageSettings.PaperSize = new PaperSize("A4", 827, 1169);
+            printDocument1.DefaultPageSettings.PrinterResolution = new PrinterResolution { X = 100, Y = 100 };
+            printDocument1.DocumentName = importReceipt.ImportReceiptID;
+            printDocument1.PrinterSettings.PrinterName = importReceipt.ImportReceiptID;
+
+            printDialog1.Document = printDocument1;
+            printDialog1.PrinterSettings.PrintFileName = importReceipt.ImportReceiptID;
+
+            if (printDialog1.ShowDialog() == DialogResult.OK)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.DefaultExt = "*.pdf";
+                sfd.Filter = "Portable Document Format|*.pdf";
+                sfd.Title = "Save an Invoice";
+                sfd.FileName = importReceipt.ImportReceiptID;
+                DialogResult result = sfd.ShowDialog();
+
+                if (result != DialogResult.Cancel)
+                {
+                    printDocument1.PrinterSettings.PrintToFile = true;
+                    printDocument1.PrinterSettings.PrintFileName = sfd.FileName;
+                    printDocument1.Print();
+                }
+            }
+
+            MessageBox.Show("Thêm các sản phẩm thành công");
+            dgvDisplayNewProduct.Rows.Clear();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("CỬA HÀNG BÁN DỤNG CỤ THỂ THAO", new Font("Quick Sand", 16, FontStyle.Bold), Brushes.Black, new Point(230, 15));
+            e.Graphics.DrawString("PHIẾU NHẬP HÀNG", new Font("Quick Sand", 16, FontStyle.Bold), Brushes.Black, new Point(304, 71));
+            e.Graphics.DrawString("Số phiếu nhập: " + importReceipt.ImportReceiptID, new Font("Quick Sand", 14, FontStyle.Regular), Brushes.Black, new Point(10, 115));
+            e.Graphics.DrawString("Nhân viên: " + Program.curentAccount.EmployeeID, new Font("Quick Sand", 14, FontStyle.Regular), Brushes.Black, new Point(566, 115));
+            e.Graphics.DrawString("Ngày lập: " + DateTime.Today.ToString("dd-MM-yyyy"), new Font("Quick Sand", 14, FontStyle.Regular), Brushes.Black, new Point(566, 156));
+
+            e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------", new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(10, 190));
+            e.Graphics.DrawString("Tên sản phẩm", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(10, 217));
+            e.Graphics.DrawString("Số lượng", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(451, 217));
+            e.Graphics.DrawString("Đơn giá", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(597, 217));
+            e.Graphics.DrawString("Loại", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(719, 217));
+            e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------", new Font("Quick Sand", 16, FontStyle.Regular), Brushes.Black, new Point(10, 238));
+            int currentPointer = 268;
+            int i = 0;
+            if (dgvDisplayNewProduct.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgvDisplayNewProduct.Rows)
+                {
+                    if (row.Cells[0].Value != null)
+                    {
+                        e.Graphics.DrawString(row.Cells[1].Value.ToString(), new Font("Quick Sand", 12, FontStyle.Regular), Brushes.Black, new Point(10, currentPointer));
+                        e.Graphics.DrawString(row.Cells[3].Value.ToString(), new Font("Quick Sand", 12, FontStyle.Regular), Brushes.Black, new Point(471, currentPointer));
+                        e.Graphics.DrawString(row.Cells[2].Value.ToString(), new Font("Quick Sand", 12, FontStyle.Regular), Brushes.Black, new Point(607, currentPointer));
+                        e.Graphics.DrawString(row.Cells[4].Value.ToString(), new Font("Quick Sand", 12, FontStyle.Regular), Brushes.Black, new Point(729, currentPointer));
+                        e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------------------------------------", new Font("Quick Sand", 11, FontStyle.Regular), Brushes.Black, new Point(10, currentPointer + 20));
+                        i++;
+                        currentPointer = 268 + i * 35;
+                    }
+                }
+
             }
         }
     }

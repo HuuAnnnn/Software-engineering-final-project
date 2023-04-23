@@ -47,6 +47,12 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.cbProductCategory = new System.Windows.Forms.ComboBox();
             this.btnInsertProduct = new System.Windows.Forms.Button();
             this.dgvDisplayNewProduct = new System.Windows.Forms.DataGridView();
+            this.productId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productAmout = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvReceipt = new System.Windows.Forms.DataGridView();
@@ -61,19 +67,15 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.chooserSortType = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
+            this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.pageSetupDialog2 = new System.Windows.Forms.PageSetupDialog();
-            this.dtpStart = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
-            this.dtpEnd = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
-            this.productId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productAmout = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -344,6 +346,46 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.dgvDisplayNewProduct.Size = new System.Drawing.Size(504, 454);
             this.dgvDisplayNewProduct.TabIndex = 2;
             // 
+            // productId
+            // 
+            this.productId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.productId.HeaderText = "Mã sản phẩm";
+            this.productId.Name = "productId";
+            this.productId.Width = 96;
+            // 
+            // productName
+            // 
+            this.productName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.productName.HeaderText = "Tên sản phẩm";
+            this.productName.Name = "productName";
+            // 
+            // productPrice
+            // 
+            this.productPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.productPrice.HeaderText = "Giá";
+            this.productPrice.Name = "productPrice";
+            this.productPrice.Width = 48;
+            // 
+            // productAmout
+            // 
+            this.productAmout.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.productAmout.HeaderText = "Số lượng";
+            this.productAmout.Name = "productAmout";
+            this.productAmout.Width = 74;
+            // 
+            // category
+            // 
+            this.category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.category.HeaderText = "Loại";
+            this.category.Name = "category";
+            this.category.Width = 52;
+            // 
+            // productImage
+            // 
+            this.productImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.productImage.HeaderText = "Hình";
+            this.productImage.Name = "productImage";
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel2);
@@ -511,6 +553,36 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.label3.TabIndex = 1;
             this.label3.Text = "Sắp xếp theo:";
             // 
+            // dtpStart
+            // 
+            this.dtpStart.BorderColor = System.Drawing.Color.Gray;
+            this.dtpStart.BorderSize = 0;
+            this.dtpStart.FillColor = System.Drawing.Color.LightGray;
+            this.dtpStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpStart.Location = new System.Drawing.Point(2, 45);
+            this.dtpStart.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpStart.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpStart.Name = "dtpStart";
+            this.dtpStart.Size = new System.Drawing.Size(151, 35);
+            this.dtpStart.TabIndex = 0;
+            this.dtpStart.TextColor = System.Drawing.Color.Black;
+            // 
+            // dtpEnd
+            // 
+            this.dtpEnd.BorderColor = System.Drawing.Color.Gray;
+            this.dtpEnd.BorderSize = 0;
+            this.dtpEnd.FillColor = System.Drawing.Color.LightGray;
+            this.dtpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEnd.Location = new System.Drawing.Point(275, 45);
+            this.dtpEnd.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpEnd.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(156, 35);
+            this.dtpEnd.TabIndex = 1;
+            this.dtpEnd.TextColor = System.Drawing.Color.Black;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -543,75 +615,13 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             this.tabPage4.Text = "Tính lương";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // dtpStart
+            // printDialog1
             // 
-            this.dtpStart.BorderColor = System.Drawing.Color.Gray;
-            this.dtpStart.BorderSize = 0;
-            this.dtpStart.FillColor = System.Drawing.Color.LightGray;
-            this.dtpStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStart.Location = new System.Drawing.Point(2, 45);
-            this.dtpStart.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpStart.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dtpStart.Name = "dtpStart";
-            this.dtpStart.Size = new System.Drawing.Size(151, 35);
-            this.dtpStart.TabIndex = 0;
-            this.dtpStart.TextColor = System.Drawing.Color.Black;
+            this.printDialog1.UseEXDialog = true;
             // 
-            // dtpEnd
+            // printDocument1
             // 
-            this.dtpEnd.BorderColor = System.Drawing.Color.Gray;
-            this.dtpEnd.BorderSize = 0;
-            this.dtpEnd.FillColor = System.Drawing.Color.LightGray;
-            this.dtpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEnd.Location = new System.Drawing.Point(275, 45);
-            this.dtpEnd.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpEnd.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dtpEnd.Name = "dtpEnd";
-            this.dtpEnd.Size = new System.Drawing.Size(156, 35);
-            this.dtpEnd.TabIndex = 1;
-            this.dtpEnd.TextColor = System.Drawing.Color.Black;
-            // 
-            // productId
-            // 
-            this.productId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.productId.HeaderText = "Mã sản phẩm";
-            this.productId.Name = "productId";
-            this.productId.Width = 96;
-            // 
-            // productName
-            // 
-            this.productName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.productName.HeaderText = "Tên sản phẩm";
-            this.productName.Name = "productName";
-            // 
-            // productPrice
-            // 
-            this.productPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.productPrice.HeaderText = "Giá";
-            this.productPrice.Name = "productPrice";
-            this.productPrice.Width = 48;
-            // 
-            // productAmout
-            // 
-            this.productAmout.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.productAmout.HeaderText = "Số lượng";
-            this.productAmout.Name = "productAmout";
-            this.productAmout.Width = 74;
-            // 
-            // category
-            // 
-            this.category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.category.HeaderText = "Loại";
-            this.category.Name = "category";
-            this.category.Width = 52;
-            // 
-            // productImage
-            // 
-            this.productImage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productImage.HeaderText = "Hình";
-            this.productImage.Name = "productImage";
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // Management
             // 
@@ -688,5 +698,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private System.Windows.Forms.DataGridViewTextBoxColumn productAmout;
         private System.Windows.Forms.DataGridViewTextBoxColumn category;
         private System.Windows.Forms.DataGridViewTextBoxColumn productImage;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

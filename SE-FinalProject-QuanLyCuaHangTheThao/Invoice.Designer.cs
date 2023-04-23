@@ -118,7 +118,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.dgvOrderDetails, 2);
             this.dgvOrderDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvOrderDetails.Location = new System.Drawing.Point(2, 85);
-            this.dgvOrderDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvOrderDetails.Margin = new System.Windows.Forms.Padding(2);
             this.dgvOrderDetails.Name = "dgvOrderDetails";
             this.dgvOrderDetails.RowHeadersWidth = 51;
             this.dgvOrderDetails.Size = new System.Drawing.Size(908, 248);
@@ -167,7 +167,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.03209F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 3, 0);
@@ -192,7 +192,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 45);
+            this.label1.Size = new System.Drawing.Size(179, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số hóa đơn";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,7 +205,7 @@
             this.label2.Location = new System.Drawing.Point(2, 45);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 32);
+            this.label2.Size = new System.Drawing.Size(181, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên khách hàng";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,7 +215,7 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(649, 0);
+            this.label3.Location = new System.Drawing.Point(648, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 45);
@@ -228,7 +228,7 @@
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(649, 45);
+            this.label4.Location = new System.Drawing.Point(648, 45);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 32);
@@ -241,7 +241,7 @@
             this.displayInvoiceID.AutoSize = true;
             this.displayInvoiceID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayInvoiceID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayInvoiceID.Location = new System.Drawing.Point(189, 0);
+            this.displayInvoiceID.Location = new System.Drawing.Point(188, 0);
             this.displayInvoiceID.Name = "displayInvoiceID";
             this.displayInvoiceID.Size = new System.Drawing.Size(297, 45);
             this.displayInvoiceID.TabIndex = 4;
@@ -253,10 +253,10 @@
             this.displayEmployeeInfo.AutoSize = true;
             this.displayEmployeeInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayEmployeeInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayEmployeeInfo.Location = new System.Drawing.Point(725, 0);
+            this.displayEmployeeInfo.Location = new System.Drawing.Point(724, 0);
             this.displayEmployeeInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.displayEmployeeInfo.Name = "displayEmployeeInfo";
-            this.displayEmployeeInfo.Size = new System.Drawing.Size(179, 45);
+            this.displayEmployeeInfo.Size = new System.Drawing.Size(180, 45);
             this.displayEmployeeInfo.TabIndex = 6;
             this.displayEmployeeInfo.Text = "label11";
             this.displayEmployeeInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -266,10 +266,10 @@
             this.displayDate.AutoSize = true;
             this.displayDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayDate.Location = new System.Drawing.Point(725, 45);
+            this.displayDate.Location = new System.Drawing.Point(724, 45);
             this.displayDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.displayDate.Name = "displayDate";
-            this.displayDate.Size = new System.Drawing.Size(179, 32);
+            this.displayDate.Size = new System.Drawing.Size(180, 32);
             this.displayDate.TabIndex = 7;
             this.displayDate.Text = "label12";
             this.displayDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -282,8 +282,8 @@
             this.tableLayoutPanel6.Controls.Add(this.customerInfo, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.btnCustomerCheck, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(188, 47);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(187, 47);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -297,7 +297,7 @@
             this.customerInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customerInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerInfo.Location = new System.Drawing.Point(2, 2);
-            this.customerInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customerInfo.Margin = new System.Windows.Forms.Padding(2);
             this.customerInfo.Name = "customerInfo";
             this.customerInfo.Size = new System.Drawing.Size(227, 26);
             this.customerInfo.TabIndex = 9;
@@ -310,7 +310,7 @@
             this.btnCustomerCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerCheck.ForeColor = System.Drawing.Color.White;
             this.btnCustomerCheck.Location = new System.Drawing.Point(233, 2);
-            this.btnCustomerCheck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCustomerCheck.Margin = new System.Windows.Forms.Padding(2);
             this.btnCustomerCheck.Name = "btnCustomerCheck";
             this.btnCustomerCheck.Size = new System.Drawing.Size(64, 24);
             this.btnCustomerCheck.TabIndex = 10;
@@ -417,11 +417,11 @@
             this.tableLayoutPanel5.Controls.Add(this.btnCheckout, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(545, 402);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(365, 34);
             this.tableLayoutPanel5.TabIndex = 11;
             // 
@@ -434,7 +434,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.OrangeRed;
             this.button1.Location = new System.Drawing.Point(2, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 30);
             this.button1.TabIndex = 18;
@@ -452,7 +452,7 @@
             this.btnCheckout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckout.ForeColor = System.Drawing.Color.White;
             this.btnCheckout.Location = new System.Drawing.Point(184, 2);
-            this.btnCheckout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCheckout.Margin = new System.Windows.Forms.Padding(2);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(179, 30);
             this.btnCheckout.TabIndex = 17;

@@ -203,3 +203,4 @@ SELECT employee.*, department.departmentName FROM EMPLOYEE, DEPARTMENT WHERE EMP
 update account set role = 'admin' where username = 'Test';
 select * from account
 
+select * from product

@@ -64,7 +64,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             leftDisplayChooosePanel.Size = new Size(LEFT_PANEL_WIDTH, featHome.Height);
             featHome.Focus();
 
-            MessageBox.Show(Program.curentAccount.Role);
             if (!Program.curentAccount.Role.Equals("admin"))
             {
                 btnManagement.Visible = false;

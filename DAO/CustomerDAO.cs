@@ -28,6 +28,25 @@ namespace DAO
             return Connection.selectQuery(query).Rows.Count > 0;
         }
 
+        public Customer getCustomerById(string id)
+        {
+            string query = string.Format("SELECT * FROM CUSTOMER WHERE ID = '{0}'", id);
+            DataTable result = Connection.selectQuery(query);
+            Customer customer = null;
+            foreach (DataRow row in result.Rows)
+            {
+                customer = new Customer(row["id"].ToString(), row["fullName"].ToString(), int.Parse(row["point"].ToString()));
+            }
+
+            return customer;
+        }
+
+        public void updatePoint(int point)
+        {
+            string query = string.Format("update customer set point = point + {0} where id = '{1}'", point, customer.Phone);
+            Connection.actionQuery(new SqlCommand(query));
+        }
+
         public bool insertNewCustomer()
         {
             SqlCommand command = new SqlCommand("INSERT INTO CUSTOMER VALUES (@PHONE, @FULLNAME, @POINT)");

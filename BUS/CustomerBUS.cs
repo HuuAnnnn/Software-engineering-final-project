@@ -1,4 +1,5 @@
 ﻿using DAO;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,26 +10,36 @@ namespace BUS
 {
     public class CustomerBUS
     {
-        private CustomerDAO customerDao;
+        private CustomerDAO customerDAO;
 
         public CustomerBUS()
         {
-            customerDao = new CustomerDAO();
+            customerDAO = new CustomerDAO();
         }
 
         public CustomerBUS(string phone, string fullName)
         {
-            customerDao = new CustomerDAO(phone, fullName);
+            customerDAO = new CustomerDAO(phone, fullName);
         }
 
         public bool isExistsCustomer()
         {
-            return customerDao.isCustomerExists();
+            return customerDAO.isCustomerExists();
         }
 
         public bool createNewUser()
         {
-            return customerDao.insertNewCustomer();
+            return customerDAO.insertNewCustomer();
+        }
+
+        public Customer getCustomerById(String id)
+        {
+            return customerDAO.getCustomerById(id);
+        }
+
+        public void udpateCustomerPoint(int point)
+        {
+            customerDAO.updatePoint(point);
         }
     }
 }

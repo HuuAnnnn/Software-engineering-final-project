@@ -50,6 +50,7 @@
     <Compile Include="Connection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceiptDAO.cs" />
+    <Compile Include="ReceiptLineDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Configuration\Configuration.csproj">

@@ -24,6 +24,10 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             string[] timeArray = date.Split(' ');
             string[] dateArray = timeArray[0].Split('/');
+            if (dateArray.Length == 1)
+            {
+                dateArray = timeArray[0].Split('-');
+            }
             string day = dateArray[1];
             string month = dateArray[0];
             string year = dateArray[2];
@@ -31,8 +35,8 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         }
         private void btnStatisticRevenue_Click(object sender, EventArgs e)
         {
-            string startDate = formatDate(dtpStartDate.Value.ToString());
-            string endDate = formatDate(dtpEndDate.Value.ToString());
+            string startDate = formatDate(dtpStartDate.Value.ToString("dd/MM/yyyyy"));
+            string endDate = formatDate(dtpEndDate.Value.ToString("dd/MM/yyyyy"));
             statisticRevenue(startDate, endDate);
         }
 

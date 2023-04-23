@@ -19,6 +19,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
     {
         EmployeeBUS employeeBus;
         ReceiptBUS receiptBUS;
+        CustomerBUS customerBus;
         public Invoice()
         {
             InitializeComponent();
@@ -51,7 +52,27 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                                         product.Price,
                                         Program.cart[key] * product.Price);
             }
+
             displayTotalPrice.Text = GUIUtils.convertIntoVND(totalPrice);
+        }
+
+        public int pointToDiscount(int point)
+        {
+            int discount = 0;
+            if (point >= 500)
+            {
+                discount = 10;
+            }
+            else if (point >= 300)
+            {
+                discount = 7;
+            } 
+            else if (point >= 100)
+            {
+                discount = 5;
+            }
+
+            return discount;
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
@@ -80,20 +101,38 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                     printDocument1.Print();
                 }
 
+
+                createNewOrder();
                 MessageBox.Show("Thanh toán thành công");
 
                 customerInfo.Clear();
-                if (dgvOrderDetails.Rows.Count > 1)
-                {
-                    for (int i = 0; i < dgvOrderDetails.Rows.Count; i++)
-                    {
-                        dgvOrderDetails.Rows.RemoveAt(i);
-                    }
-                }
+                dgvOrderDetails.Rows.Clear();
                 displayDate.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
                 displayInvoiceID.Text = receiptBUS.generateInvoiceID();
+                displayTotalPrice.Text = "";
+                displayFinalTotalPrice.Text = "";
+                displayDiscount.Text = "";
             }
+        }
 
+        public void createNewOrder()
+        {
+            double totalOrderPrice = double.Parse(displayFinalTotalPrice.Text.ToString().Substring(1));
+            receiptBUS = new ReceiptBUS(DateTime.Now.ToString("yyyy-MM-dd"), totalOrderPrice, Program.curentAccount.EmployeeID, customerInfo.Text);
+            receiptBUS.createNewReceipt();
+            Receipt currentReceipt = receiptBUS.getCurrentReceipt();
+            Product product = null;
+            ProductBUS productBus = new ProductBUS();
+            ReceiptLineBUS receiptLineBus = null;
+            customerBus = new CustomerBUS(customerInfo.Text, "");
+            customerBus.udpateCustomerPoint((int)(0.1 * totalOrderPrice));
+
+            foreach (string key in Program.cart.Keys)
+            {
+                product = productBus.getProductByID(key);
+                receiptLineBus = new ReceiptLineBUS(currentReceipt.ReceiptID, key, Program.cart[key], Program.cart[key] * product.Price);
+                receiptLineBus.insertOrderLine();
+            }
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -130,10 +169,10 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                 }
 
             }
-            e.Graphics.DrawString("Tổng tiền: ", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(535, currentPointer + 50));
-            e.Graphics.DrawString("Giảm giá: ", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(535, currentPointer + 70));
+            e.Graphics.DrawString("Tổng tiền: " + displayTotalPrice.Text.ToString(), new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(535, currentPointer + 50));
+            e.Graphics.DrawString("Giảm giá: " + displayDiscount.Text.ToString(), new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(535, currentPointer + 70));
             e.Graphics.DrawString("--------------------------------------------------------", new Font("Quick Sand", 11, FontStyle.Regular), Brushes.Black, new Point(535, currentPointer + 90));
-            e.Graphics.DrawString("Tổng thanh toán: ", new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(535, currentPointer + 120));
+            e.Graphics.DrawString("Tổng thanh toán: " + displayFinalTotalPrice.Text.ToString(), new Font("Quick Sand", 12, FontStyle.Bold), Brushes.Black, new Point(535, currentPointer + 120));
 
             e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------------------------------------", new Font("Quick Sand", 11, FontStyle.Regular), Brushes.Black, new Point(10, currentPointer + 150));
             e.Graphics.DrawString("Xin cảm hơn và hẹn gặp lại quý khách", new Font("Quick Sand", 12, FontStyle.Italic), Brushes.Black, new Point(290, currentPointer + 200));
@@ -166,12 +205,18 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
                     btnCheckout.Enabled = true;
                 }
             }
-            else
+
+            if (customerBus.isExistsCustomer())
             {
                 customerInfo.ReadOnly = true;
                 btnCheckout.Enabled = true;
-            }
 
+                Customer customer = customerBus.getCustomerById(customerInfo.Text);
+                displayDiscount.Text = pointToDiscount(customer.Point) + "%";
+                double totalPrice = double.Parse(displayTotalPrice.Text.Substring(1).Replace(",", ""));
+                double finalTotalPrice = (1 - (pointToDiscount(customer.Point) / 100.0)) * totalPrice;
+                displayFinalTotalPrice.Text = GUIUtils.convertIntoVND(finalTotalPrice);
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +33,7 @@ namespace DAO
 
         private int getNextReceiptId()
         {
-            String query = "select top 1 id from receipt order by id desc";
+            String query = string.Format("select top 1 id from receipt where dateCreate = '{0}' order by id desc", DateTime.Now.ToString("yyyy-MM-dd"));
             DataTable result = Connection.selectQuery(query);
             string currentId = "";
             foreach (DataRow row in result.Rows)

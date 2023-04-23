@@ -36,15 +36,20 @@ namespace DAO
             String query = string.Format("select top 1 id from receipt where dateCreate = '{0}' order by id desc", DateTime.Now.ToString("yyyy-MM-dd"));
             DataTable result = Connection.selectQuery(query);
             string currentId = "";
-            foreach (DataRow row in result.Rows)
+            if (result.Rows.Count > 0)
             {
-                currentId = row["id"].ToString();
-                break;
+                foreach (DataRow row in result.Rows)
+                {
+                    currentId = row["id"].ToString();
+                    break;
+                }
+
+                int nextId = int.Parse(currentId.Substring(currentId.Length - 3)) + 1;
+
+                return nextId;
             }
 
-            int nextId = int.Parse(currentId.Substring(currentId.Length - 3)) + 1;
-
-            return nextId;
+            return 1;
         }
 
         public string generateReceiptId()

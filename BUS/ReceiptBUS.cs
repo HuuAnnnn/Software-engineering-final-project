@@ -14,13 +14,11 @@ namespace BUS
         private ReceiptDAO receiptDAO;
         public ReceiptBUS()
         {
-            Connection.connect();
             receiptDAO = new ReceiptDAO();
         }
 
         public ReceiptBUS(string dateCreated, double total, string employeeID, string customerID)
         {
-            Connection.connect();
             receiptDAO = new ReceiptDAO(dateCreated, total, employeeID, customerID);
         }
 

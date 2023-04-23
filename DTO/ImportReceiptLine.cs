@@ -8,17 +8,20 @@ namespace DTO
 {
     public class ImportReceiptLine
     {
-        public ImportReceiptLine(string productID, int quantity, int total)
+        public ImportReceiptLine(string importReceitptId, string productID, int quantity, double total)
         {
+            this.ImportReceiptId = importReceitptId;
             this.ProductID = productID;
             this.Quantity = quantity;
             this.Total = total;
         }
 
+        public string ImportReceiptId { get; set; }
+
         public string ProductID { get; set; }
 
         public int Quantity { get; set; }
 
-        public int Total { get; set; }
+        public double Total { get; set; }
     }
 }

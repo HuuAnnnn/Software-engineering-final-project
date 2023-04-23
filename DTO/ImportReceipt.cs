@@ -8,26 +8,23 @@ namespace DTO
 {
     public class ImportReceipt
     {
-        public ImportReceipt(string importReceiptID, string dateCreated, int total, bool stateAccept, string employeeID, List<ExportReceiptLine> exportReceiptLines)
+        public ImportReceipt(string importReceiptID, string dateCreated, double total, bool stateAccept, string employeeID)
         {
             this.ImportReceiptID = importReceiptID;
             this.DateCreated = dateCreated;
             this.Total = total;
             this.StateAccept = stateAccept;
             this.EmployeeID = employeeID;
-            this.ExportReceiptLines = exportReceiptLines;
         }
 
         public string ImportReceiptID { get; set; }
 
         public string DateCreated { get; set; }
 
-        public int Total { get; set; }
+        public double Total { get; set; }
 
         public Boolean StateAccept { get; set; }
 
         public String EmployeeID { get; set; }
-
-        public List<ExportReceiptLine> ExportReceiptLines { get; set; }
     }
 }

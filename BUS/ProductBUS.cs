@@ -18,9 +18,19 @@ namespace BUS
             productDAO = new ProductDAO();
         }
 
-        public ProductBUS(string productId, string productName, int quantityInStore, int quantityInWarehouse, string category, int price, byte[] image) 
+        public ProductBUS(string productName, int quantityInStore, int quantityInWarehouse, string category, double price, byte[] image) 
+        {
+            this.productDAO = new ProductDAO(productName, quantityInStore, quantityInWarehouse, category, price, image);
+        }
+
+        public ProductBUS(string productId, string productName, int quantityInStore, int quantityInWarehouse, string category, double price, byte[] image)
         {
             this.productDAO = new ProductDAO(productId, productName, quantityInStore, quantityInWarehouse, category, price, image);
+        }
+
+        public Product getProduct()
+        {
+            return productDAO.getProduct();
         }
 
         public void insertQuery()

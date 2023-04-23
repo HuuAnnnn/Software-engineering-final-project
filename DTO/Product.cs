@@ -9,7 +9,7 @@ namespace DTO
     public class Product
     {
         public Product() { }    
-        public Product(string productId, string productName, int quantityInStore, int quantityInWarehouse,string category, int price, byte[] image)
+        public Product(string productId, string productName, int quantityInStore, int quantityInWarehouse,string category, double price, byte[] image)
         {
             this.ProductId = productId;
             this.ProductName = productName;
@@ -30,7 +30,7 @@ namespace DTO
 
         public string Category { get; set; }
 
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         public byte[] Image { get; set; }
     }

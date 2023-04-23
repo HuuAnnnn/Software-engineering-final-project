@@ -1,4 +1,5 @@
 ﻿using DAO;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -30,6 +31,11 @@ namespace BUS
         public DataTable selectQuery()
         {
             return this.productDAO.selectQuery();
+        }
+
+        public Product getProductByID(string id)
+        {
+            return productDAO.getProductByID(id);
         }
 
         public DataTable selectQueryWithNameAndPrice(string productName, int price)

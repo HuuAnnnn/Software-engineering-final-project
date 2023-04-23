@@ -1,4 +1,5 @@
 ﻿using BUS;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 
 namespace SE_FinalProject_QuanLyCuaHangTheThao
@@ -19,6 +21,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
     {
         private ProductBUS productBUS;
         private ReceiptBUS receiptBUS;
+        private EmployeeBUS employeeBUS;
         public ProductsForm()
         {
             InitializeComponent();
@@ -29,6 +32,10 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             productBUS = new ProductBUS();
             receiptBUS = new ReceiptBUS();
             addProducts(productBUS.selectQuery());
+            totalInCart.Text = totalProduct() + "";
+            employeeBUS = new EmployeeBUS();
+            Employee employee = employeeBUS.getEmployeeById(Program.curentAccount.EmployeeID);
+            displayEmpUsername.Text = employee.FullName;
         }
 
         private void ProductsForm_Load(object sender, EventArgs e)
@@ -109,19 +116,21 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
             string productName = "";
             string price = "";
+            string id = "";
             Image image = null;
             foreach(DataRow row in dataTableProduct.Select())
             {
                 productName = row["productName"].ToString();
                 price = row["price"].ToString();
                 image = convertByteArrayToImage((byte[])row["photo"]);
-                cardProduct = createProductCard(productName, price, image);
+                id = row["productID"].ToString();
+                cardProduct = createProductCard(id, productName, price, image);
                 cardProduct.Margin = new Padding(10);
                 displayProducts.Controls.Add(cardProduct);
             }
         }
 
-        public Panel createProductCard(string productName, string price, Image image)
+        public Panel createProductCard(string id, string productName, string price, Image image)
         {
             // main body of product frame
             Panel cardBody = new Panel();
@@ -166,19 +175,38 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             btnAddToCart.BackColor = Color.Gainsboro;
             btnAddToCart.Cursor = Cursors.Hand;
             cardBody.Controls.Add(btnAddToCart);
+            btnAddToCart.Tag = id;
             btnAddToCart.Click += btnAddToCart_Click;
 
             return cardBody;
         }
 
-        private void btnAddToCart_Click (object sender, EventArgs e)
+        private void btnAddToCart_Click(object sender, EventArgs e)
         {
-            if (Program.currentReceipt == null)
+            Label btn = (Label)sender;
+            if (Program.cart.Keys.Contains(btn.Tag.ToString()))
             {
-                receiptBUS = new ReceiptBUS(DateTime.Now.ToString("yyyy-mm-dd"), 0, Program.curentAccount.EmployeeID, "");
-                receiptBUS.createNewReceipt();
-                Program.currentReceipt = receiptBUS.getReceipt();
+                int currentAmount = 1;
+                Program.cart.TryGetValue(btn.Tag.ToString(), out currentAmount);
+                Program.cart[btn.Tag.ToString()] = currentAmount + 1;
+            } 
+            else
+            {
+                Program.cart[btn.Tag.ToString()] = 1;
             }
+
+            totalInCart.Text = totalProduct() + "";
+        }
+
+        private int totalProduct()
+        {
+            int total = 0;
+            foreach(string key in Program.cart.Keys)
+            {
+                total += Program.cart[key];
+            }
+
+            return total;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using BUS;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         /// </summary>
         public static Account curentAccount = null;
         public static Receipt currentReceipt = null;
+        public static Dictionary<string, int> cart = new Dictionary<string, int>();
         [STAThread]
         static void Main()
         {

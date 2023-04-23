@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using BUS;
+using DTO;
 using SE_FinalProject_QuanLyCuaHangTheThao.Properties;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private Button featureBtn;
         private string name;
         private Form currentEmbedForm;
+        private ReceiptBUS receiptBus;
 
         public Home()
         {
@@ -55,7 +57,9 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
 
         private void loadHome()
         {
+            receiptBus = new ReceiptBUS();
             const int LEFT_PANEL_WIDTH = 5;
+            Program.currentReceipt = receiptBus.getCurrentReceipt();
             leftDisplayChooosePanel = new Panel();
             leftDisplayChooosePanel.Size = new Size(LEFT_PANEL_WIDTH, featHome.Height);
             featHome.Focus();
@@ -184,6 +188,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private void featTrolley_Click(object sender, EventArgs e)
         {
             activateFeature(sender, "trolley");
+            openEmbedForm(new CartForm());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

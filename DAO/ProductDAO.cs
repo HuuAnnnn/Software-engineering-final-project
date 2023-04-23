@@ -60,6 +60,7 @@ namespace DAO
             return Connection.selectQuery(selectQuery);
         }
 
+<<<<<<< Updated upstream
         public DataTable selectSortPriceDesc()
         {
             string selectQuery = "SELECT * FROM Product ORDER BY price Desc";
@@ -76,6 +77,27 @@ namespace DAO
         {
             string selectQuery = "SELECT * FROM Product WHERE category = '" + category + "'";
             return Connection.selectQuery(selectQuery);
+=======
+        public Product getProductByID(string id)
+        {
+            string selectQuery = string.Format("SELECT * FROM PRODUCT WHERE PRODUCTID = '{0}'", id);
+            DataTable result = Connection.selectQuery(selectQuery);
+            Product product = null; 
+            foreach (DataRow row in result.Rows)
+            {
+                product = new Product(
+                    row["productId"].ToString(),
+                    row["productName"].ToString(),
+                    int.Parse(row["quantityInWareHouse"].ToString()),
+                    int.Parse(row["quantityInStore"].ToString()),
+                    row["category"].ToString(),
+                    double.Parse(row["price"].ToString()),
+                    null
+                 );
+            }
+
+            return product;
+>>>>>>> Stashed changes
         }
     }
 }

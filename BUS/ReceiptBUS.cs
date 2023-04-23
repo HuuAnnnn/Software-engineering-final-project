@@ -29,6 +29,16 @@ namespace BUS
             return receiptDAO.getReceipt();
         }
 
+        public Receipt getCurrentReceipt()
+        {
+            return receiptDAO.getCurrentReceipt();
+        }
+
+        public string generateInvoiceID()
+        {
+            return receiptDAO.generateReceiptId();
+        }
+
         public void createNewReceipt()
         {
             receiptDAO.insertNewReceipt();

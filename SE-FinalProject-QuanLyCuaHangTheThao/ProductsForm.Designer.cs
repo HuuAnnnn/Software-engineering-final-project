@@ -143,14 +143,18 @@
             // 
             // totalInCart
             // 
-            this.totalInCart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.totalInCart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.totalInCart.AutoSize = true;
             this.totalInCart.BackColor = System.Drawing.Color.Transparent;
             this.totalInCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.totalInCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalInCart.ForeColor = System.Drawing.Color.Red;
+<<<<<<< Updated upstream
             this.totalInCart.Location = new System.Drawing.Point(57, 37);
             this.totalInCart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.totalInCart.Location = new System.Drawing.Point(44, 30);
+>>>>>>> Stashed changes
             this.totalInCart.Name = "totalInCart";
             this.totalInCart.Size = new System.Drawing.Size(62, 31);
             this.totalInCart.TabIndex = 33;
@@ -188,7 +192,11 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.238185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.76182F));
+<<<<<<< Updated upstream
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+=======
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+>>>>>>> Stashed changes
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.inProductSearch, 1, 0);
@@ -221,10 +229,16 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
+<<<<<<< Updated upstream
             this.btnSearch.Location = new System.Drawing.Point(660, 5);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(169, 37);
+=======
+            this.btnSearch.Location = new System.Drawing.Point(498, 4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(124, 30);
+>>>>>>> Stashed changes
             this.btnSearch.TabIndex = 32;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -238,7 +252,11 @@
             this.inProductSearch.Location = new System.Drawing.Point(46, 5);
             this.inProductSearch.Margin = new System.Windows.Forms.Padding(4);
             this.inProductSearch.Name = "inProductSearch";
+<<<<<<< Updated upstream
             this.inProductSearch.Size = new System.Drawing.Size(605, 37);
+=======
+            this.inProductSearch.Size = new System.Drawing.Size(456, 30);
+>>>>>>> Stashed changes
             this.inProductSearch.TabIndex = 31;
             this.inProductSearch.Text = "";
             // 

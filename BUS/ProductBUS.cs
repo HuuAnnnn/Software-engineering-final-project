@@ -36,5 +36,20 @@ namespace BUS
         {
             return this.productDAO.selectQueryWithNameAndPrice(productName, price);
         }
+
+        public DataTable selectSortPriceDesc()
+        {
+            return this.productDAO.selectSortPriceDesc();
+        }
+
+        public DataTable selectSortPrice()
+        {
+            return this.productDAO.selectSortPrice();
+        }
+
+        public DataTable filterProductWithCategory(string category)
+        {
+            return productDAO.filterProductWithCategory(category);
+        }
     }
 }

@@ -59,5 +59,23 @@ namespace DAO
             string selectQuery = "SELECT * FROM Product WHERE productName LIKE '%" + productName + "%' AND price <= " + price;
             return Connection.selectQuery(selectQuery);
         }
+
+        public DataTable selectSortPriceDesc()
+        {
+            string selectQuery = "SELECT * FROM Product ORDER BY price Desc";
+            return Connection.selectQuery(selectQuery);
+        }
+
+        public DataTable selectSortPrice()
+        {
+            string selectQuery = "SELECT * FROM Product ORDER BY price";
+            return Connection.selectQuery(selectQuery);
+        }
+
+        public DataTable filterProductWithCategory(string category)
+        {
+            string selectQuery = "SELECT * FROM Product WHERE category = '" + category + "'";
+            return Connection.selectQuery(selectQuery);
+        }
     }
 }

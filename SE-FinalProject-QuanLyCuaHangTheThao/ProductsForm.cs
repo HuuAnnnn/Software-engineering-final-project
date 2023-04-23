@@ -40,6 +40,10 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             displayLimitPriceRange.Text = GUIUtils.convertIntoVND(priceRange.Value);
         }
 
+        public void clearDisplayProducts()
+        {
+            displayProducts.Controls.Clear();
+        }
         private void displayLimitPriceRange_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -190,13 +194,35 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             }
             int price = Convert.ToInt32(priceFormated);
             DataTable productFound = findProductWithNameAndPrice(productName, price);
-            displayProducts.Controls.Clear();
+            clearDisplayProducts();
             addProducts(productFound);
         }
 
         public DataTable findProductWithNameAndPrice(string productName, int price)
         {
             return productBUS.selectQueryWithNameAndPrice(productName, price);
-        } 
+        }
+
+        private void chooseSortType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (chooseSortType.SelectedIndex.ToString() == "0")
+            {
+                clearDisplayProducts();
+                addProducts(productBUS.selectSortPriceDesc());
+            }
+            else
+            {
+                clearDisplayProducts();
+                addProducts(productBUS.selectSortPrice());
+            }
+        }
+
+        private void chooseType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(chooseType.SelectedItem.ToString());
+            string category = chooseType.SelectedItem.ToString().Trim();
+            clearDisplayProducts();
+            addProducts(productBUS.filterProductWithCategory(category));
+        }
     }
 }

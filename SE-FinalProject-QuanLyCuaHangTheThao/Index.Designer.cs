@@ -59,6 +59,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(241, 141);
             this.panel1.Name = "panel1";
@@ -104,6 +105,11 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(437, 195);
 >>>>>>> Stashed changes
+=======
+            this.panel1.Location = new System.Drawing.Point(241, 141);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(437, 195);
+>>>>>>> Stashed changes
             this.panel1.TabIndex = 0;
             // 
             // displayEmplTitle
@@ -138,6 +144,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             this.lblWelcome.Location = new System.Drawing.Point(26, 14);
 =======
@@ -157,6 +164,9 @@
 >>>>>>> Stashed changes
 =======
             this.lblWelcome.Location = new System.Drawing.Point(26, 18);
+>>>>>>> Stashed changes
+=======
+            this.lblWelcome.Location = new System.Drawing.Point(26, 14);
 >>>>>>> Stashed changes
 =======
             this.lblWelcome.Location = new System.Drawing.Point(26, 14);
@@ -200,6 +210,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(34, 134);
 =======
@@ -226,6 +237,9 @@
 =======
             this.pictureBox1.Location = new System.Drawing.Point(34, 134);
 >>>>>>> Stashed changes
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(34, 134);
+>>>>>>> Stashed changes
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,6 +250,7 @@
             // 
             this.imgUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgUsername.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.username_index_1;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -269,6 +284,9 @@
 =======
             this.imgUsername.Location = new System.Drawing.Point(34, 78);
 >>>>>>> Stashed changes
+=======
+            this.imgUsername.Location = new System.Drawing.Point(34, 78);
+>>>>>>> Stashed changes
             this.imgUsername.Name = "imgUsername";
             this.imgUsername.Size = new System.Drawing.Size(32, 32);
             this.imgUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -277,6 +295,7 @@
             // 
             // tableLayoutPanel1
             // 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -330,18 +349,26 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 >>>>>>> Stashed changes
+=======
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+>>>>>>> Stashed changes
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 443F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.93458F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 194F));
+<<<<<<< Updated upstream
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 <<<<<<< Updated upstream
@@ -397,6 +424,11 @@
 =======
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 194F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(911, 533);
+>>>>>>> Stashed changes
+=======
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(911, 533);

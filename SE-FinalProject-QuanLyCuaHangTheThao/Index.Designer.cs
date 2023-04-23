@@ -52,15 +52,22 @@
             this.panel1.Controls.Add(this.lblUsername);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.imgUsername);
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(241, 141);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(437, 195);
+=======
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(143, 82);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(592, 272);
+>>>>>>> e40f562e68ccf5874d095e235577629c970e4ab2
             this.panel1.TabIndex = 0;
             // 
             // displayEmplTitle
             // 
             this.displayEmplTitle.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayEmplTitle.Location = new System.Drawing.Point(174, 139);
+            this.displayEmplTitle.Location = new System.Drawing.Point(263, 174);
             this.displayEmplTitle.Name = "displayEmplTitle";
             this.displayEmplTitle.Size = new System.Drawing.Size(168, 31);
             this.displayEmplTitle.TabIndex = 15;
@@ -70,7 +77,7 @@
             // 
             this.displayEmpUsername.AutoSize = true;
             this.displayEmpUsername.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayEmpUsername.Location = new System.Drawing.Point(130, 83);
+            this.displayEmpUsername.Location = new System.Drawing.Point(219, 118);
             this.displayEmpUsername.Name = "displayEmpUsername";
             this.displayEmpUsername.Size = new System.Drawing.Size(168, 31);
             this.displayEmpUsername.TabIndex = 14;
@@ -82,7 +89,11 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblWelcome.Font = new System.Drawing.Font("Quicksand", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblWelcome.Location = new System.Drawing.Point(26, 14);
+=======
+            this.lblWelcome.Location = new System.Drawing.Point(104, 53);
+>>>>>>> e40f562e68ccf5874d095e235577629c970e4ab2
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(146, 43);
             this.lblWelcome.TabIndex = 13;
@@ -92,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Quicksand SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(71, 139);
+            this.label3.Location = new System.Drawing.Point(160, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 31);
             this.label3.TabIndex = 12;
@@ -102,7 +113,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Quicksand SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(71, 84);
+            this.lblUsername.Location = new System.Drawing.Point(160, 119);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(53, 31);
             this.lblUsername.TabIndex = 11;
@@ -112,7 +123,11 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.tag_index_1;
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(34, 134);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(112, 173);
+>>>>>>> e40f562e68ccf5874d095e235577629c970e4ab2
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +138,11 @@
             // 
             this.imgUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgUsername.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.username_index_1;
+<<<<<<< HEAD
             this.imgUsername.Location = new System.Drawing.Point(34, 78);
+=======
+            this.imgUsername.Location = new System.Drawing.Point(112, 117);
+>>>>>>> e40f562e68ccf5874d095e235577629c970e4ab2
             this.imgUsername.Name = "imgUsername";
             this.imgUsername.Size = new System.Drawing.Size(32, 32);
             this.imgUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,6 +151,7 @@
             // 
             // tableLayoutPanel1
             // 
+<<<<<<< HEAD
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 443F));
@@ -147,6 +167,23 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(911, 533);
+=======
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.05312F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.94688F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 58);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.93458F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 278F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(887, 440);
+>>>>>>> e40f562e68ccf5874d095e235577629c970e4ab2
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Index

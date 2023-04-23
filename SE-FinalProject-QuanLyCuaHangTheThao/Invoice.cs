@@ -98,6 +98,11 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------------------------------------", new Font("Quick Sand", 11, FontStyle.Regular), Brushes.Black, new Point(10, currentPointer + 150));
             e.Graphics.DrawString("Xin cảm hơn và hẹn gặp lại quý khách", new Font("Quick Sand", 12, FontStyle.Italic), Brushes.Black, new Point(290, currentPointer + 200));
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.currentReceipt = null;
+        }
     }
 }
 

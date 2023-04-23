@@ -180,7 +180,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.238185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.76182F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.inProductSearch, 1, 0);
@@ -198,7 +198,7 @@
             this.pictureBox3.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.search;
             this.pictureBox3.Location = new System.Drawing.Point(4, 6);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(24, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
@@ -211,9 +211,9 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(502, 4);
+            this.btnSearch.Location = new System.Drawing.Point(500, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(120, 30);
+            this.btnSearch.Size = new System.Drawing.Size(122, 30);
             this.btnSearch.TabIndex = 32;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -224,9 +224,9 @@
             this.inProductSearch.BackColor = System.Drawing.Color.White;
             this.inProductSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inProductSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inProductSearch.Location = new System.Drawing.Point(36, 4);
+            this.inProductSearch.Location = new System.Drawing.Point(35, 4);
             this.inProductSearch.Name = "inProductSearch";
-            this.inProductSearch.Size = new System.Drawing.Size(459, 30);
+            this.inProductSearch.Size = new System.Drawing.Size(458, 30);
             this.inProductSearch.TabIndex = 31;
             this.inProductSearch.Text = "";
             // 

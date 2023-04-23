@@ -13,6 +13,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         /// The main entry point for the application.
         /// </summary>
         public static Account curentAccount = null;
+        public static Receipt currentReceipt = null;
         [STAThread]
         static void Main()
         {

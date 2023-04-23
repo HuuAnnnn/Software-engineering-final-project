@@ -18,6 +18,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
     public partial class ProductsForm : Form
     {
         private ProductBUS productBUS;
+        private ReceiptBUS receiptBUS;
         public ProductsForm()
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             priceRange.Maximum = ConfigGUI.DEFAULT_LIMIT_PRICE;
 
             productBUS = new ProductBUS();
+            receiptBUS = new ReceiptBUS();
             addProducts(productBUS.selectQuery());
         }
 
@@ -160,8 +162,19 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             btnAddToCart.BackColor = Color.Gainsboro;
             btnAddToCart.Cursor = Cursors.Hand;
             cardBody.Controls.Add(btnAddToCart);
+            btnAddToCart.Click += btnAddToCart_Click;
 
             return cardBody;
+        }
+
+        private void btnAddToCart_Click (object sender, EventArgs e)
+        {
+            if (Program.currentReceipt == null)
+            {
+                receiptBUS = new ReceiptBUS(DateTime.Now.ToString("yyyy-mm-dd"), 0, Program.curentAccount.EmployeeID, "");
+                receiptBUS.createNewReceipt();
+                Program.currentReceipt = receiptBUS.getReceipt();
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

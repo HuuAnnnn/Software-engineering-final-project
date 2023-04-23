@@ -8,7 +8,7 @@ namespace DTO
 {
     public class Receipt
     {
-        public Receipt(string receiptID, string dateCreated, int total, string employeeID, string customerID, List<ReceiptLine> receiptLines)
+        public Receipt(string receiptID, string dateCreated, double total, string employeeID, string customerID, List<ReceiptLine> receiptLines, string receiptState)
         {
             this.ReceiptID = receiptID;
             this.DateCreated = dateCreated;
@@ -16,17 +16,19 @@ namespace DTO
             this.EmployeeID = employeeID;
             this.Customer = customerID;
             this.ReceiptLines = receiptLines;
+            this.ReceiptState = receiptState;
         }
 
         public string ReceiptID { get; set; }
 
         public string DateCreated { get; set; }
 
-        public int Total { get; set; }
+        public double Total { get; set; }
 
         public string EmployeeID { get; set; }
 
         public string Customer { get; set; }
+        public string ReceiptState { get; set; }
 
         public List<ReceiptLine> ReceiptLines { get; set; }
     }

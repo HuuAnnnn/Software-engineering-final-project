@@ -42,11 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
-<<<<<<< Updated upstream
     <Compile Include="DattaTable.cs" />
-=======
     <Compile Include="CustomerDAO.cs" />
->>>>>>> Stashed changes
     <Compile Include="DbConfiguration.cs" />
     <Compile Include="EmployeeDAO.cs" />
     <Compile Include="ProductDAO.cs" />

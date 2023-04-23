@@ -69,7 +69,6 @@ namespace DAO
             Connection.actionQuery(command);
         }
 
-<<<<<<< Updated upstream
         public DataTable selectTotalRevenueInDay(string startDate, string endDate)
         {
             string selectQuery = "SELECT t1.dateCreated, SUM(t1.total) as totalInDay"
@@ -85,7 +84,7 @@ namespace DAO
             string selectQuery = "SELECT TOP 10 t4.*, Product.productName FROM Product, (SELECT t3.productID, SUM(t3.total) as totalOfProduct FROM(SELECT t2.*, Product.productName FROM Product, (SELECT ReceiptLine.* FROM ReceiptLine, (SELECT receiptID FROM Receipt WHERE dateCreated BETWEEN '" + startDate + "' AND '" + endDate + "') as t1 WHERE ReceiptLine.receiptID = t1.receiptID) as t2 WHERE t2.productID = Product.productID) as t3 GROUP BY t3.productID) as t4 WHERE t4.productID = Product.productID ORDER BY t4.totalOfProduct Desc";
 
             return Connection.selectQuery(selectQuery);
-=======
+        }
         public Receipt getCurrentReceipt()
         {
             string query = string.Format("select * from receipt where receiptState = 'not pay' and dateCreate = '{0}'", DateTime.Today.ToString("yyyy-MM-dd"));
@@ -105,7 +104,6 @@ namespace DAO
             }
 
             return receipt;
->>>>>>> Stashed changes
         }
     }
 }

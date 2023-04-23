@@ -59,8 +59,6 @@ namespace DAO
             string selectQuery = "SELECT * FROM Product WHERE productName LIKE '%" + productName + "%' AND price <= " + price;
             return Connection.selectQuery(selectQuery);
         }
-
-<<<<<<< Updated upstream
         public DataTable selectSortPriceDesc()
         {
             string selectQuery = "SELECT * FROM Product ORDER BY price Desc";
@@ -77,7 +75,8 @@ namespace DAO
         {
             string selectQuery = "SELECT * FROM Product WHERE category = '" + category + "'";
             return Connection.selectQuery(selectQuery);
-=======
+        }
+
         public Product getProductByID(string id)
         {
             string selectQuery = string.Format("SELECT * FROM PRODUCT WHERE PRODUCTID = '{0}'", id);
@@ -97,7 +96,6 @@ namespace DAO
             }
 
             return product;
->>>>>>> Stashed changes
         }
     }
 }

@@ -166,6 +166,14 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         private void button3_Click(object sender, EventArgs e)
         {
             activateFeature(sender, "user");
+            AccountSettingForm accountSettingForm = new AccountSettingForm();
+            accountSettingForm.FormClosed += new FormClosedEventHandler(formClose);
+            openEmbedForm(accountSettingForm);
+        }
+
+        private void formClose(object sender, FormClosedEventArgs e)
+        {
+            Application.Restart();
         }
 
         private void button4_Click(object sender, EventArgs e)

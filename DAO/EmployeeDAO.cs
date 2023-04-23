@@ -27,7 +27,7 @@ namespace DAO
 
         public Employee getEmployeeByID(string id)
         {
-            String query = string.Format("SELECT * FROM EMPLOYEE WHERE EMPLOYEEID = '{0}'", id);
+            String query = string.Format("SELECT employee.*, department.departmentName FROM EMPLOYEE, DEPARTMENT WHERE EMPLOYEEID = '{0}'", id);
             DataTable queryResult = Connection.selectQuery(query);
             Employee resultEmployee = null; ;
             if (queryResult.Rows.Count != 0)
@@ -38,7 +38,7 @@ namespace DAO
                         row["employeeId"].ToString(),
                         row["fullName"].ToString(),
                         double.Parse(row["salary"].ToString()),
-                        row["department"].ToString(),
+                        row["departmentName"].ToString(),
                         int.Parse(row["isDeleted"].ToString())
                     );
                 }

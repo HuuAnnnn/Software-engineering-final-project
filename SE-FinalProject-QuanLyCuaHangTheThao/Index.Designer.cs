@@ -308,6 +308,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Index";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Index_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

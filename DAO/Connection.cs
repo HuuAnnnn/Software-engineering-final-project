@@ -20,7 +20,7 @@ namespace DAO
             builder["integrated Security"] = true;
             builder["Initial Catalog"] = DbConfiguration.DB_CATELOG;
             string connectionString = "initial catalog = QuanLyCuaHangDungCuTheThao; " +
-                                        "data source = THINHVO\\SQLEXPRESS; " +
+                                        "data source = ANNNN\\SQLEXPRESS01; " +
                                         "integrated security=true";
             connection = new SqlConnection(connectionString);
             connection.Open();

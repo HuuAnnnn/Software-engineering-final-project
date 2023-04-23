@@ -124,7 +124,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         public void login()
         {
             String username = inUsername.Text;
-            String password = inPassword.Text;
+            String password = inPassword.Text.Trim();
             if (username.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_INPUT_USERNAME) ||
                 password.Equals(ConfigGUI.DEFAULT_PLACEHOLDER_NEW_PASSWORD) ||
                 username.Equals("") || password.Equals(""))

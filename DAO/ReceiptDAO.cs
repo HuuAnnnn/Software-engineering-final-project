@@ -78,5 +78,12 @@ namespace DAO
             
             return Connection.selectQuery(selectQuery);
         }
+
+        public DataTable selectTop10Product(string startDate, string endDate)
+        {
+            string selectQuery = "SELECT TOP 10 t4.*, Product.productName FROM Product, (SELECT t3.productID, SUM(t3.total) as totalOfProduct FROM(SELECT t2.*, Product.productName FROM Product, (SELECT ReceiptLine.* FROM ReceiptLine, (SELECT receiptID FROM Receipt WHERE dateCreated BETWEEN '" + startDate + "' AND '" + endDate + "') as t1 WHERE ReceiptLine.receiptID = t1.receiptID) as t2 WHERE t2.productID = Product.productID) as t3 GROUP BY t3.productID) as t4 WHERE t4.productID = Product.productID ORDER BY t4.totalOfProduct Desc";
+
+            return Connection.selectQuery(selectQuery);
+        }
     }
 }

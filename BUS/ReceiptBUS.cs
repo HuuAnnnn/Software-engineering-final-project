@@ -38,5 +38,10 @@ namespace BUS
         {
             return receiptDAO.selectTotalRevenueInDay(startDate, endDate);
         }
+
+        public DataTable selectTop10Product(string startDate, string endDate)
+        {
+            return receiptDAO.selectTop10Product(startDate, endDate);
+        }
     }
 }

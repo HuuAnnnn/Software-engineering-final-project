@@ -44,14 +44,14 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnExportExcel = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtpStartDate = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
+            this.dtpEndDate = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.lbStartDate = new System.Windows.Forms.Label();
             this.lbEndDate = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.btnStatisticProduct = new System.Windows.Forms.Button();
             this.btnStatisticRevenue = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtpStartDate = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
-            this.dtpEndDate = new SE_FinalProject_QuanLyCuaHangTheThao.RashiDateTimePicker();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.charRevenue)).BeginInit();
@@ -213,6 +213,34 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(556, 81);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
+            // dtpStartDate
+            // 
+            this.dtpStartDate.BorderColor = System.Drawing.Color.Gray;
+            this.dtpStartDate.BorderSize = 0;
+            this.dtpStartDate.FillColor = System.Drawing.Color.DarkGray;
+            this.dtpStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpStartDate.Location = new System.Drawing.Point(3, 33);
+            this.dtpStartDate.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(226, 35);
+            this.dtpStartDate.TabIndex = 0;
+            this.dtpStartDate.TextColor = System.Drawing.Color.Black;
+            // 
+            // dtpEndDate
+            // 
+            this.dtpEndDate.BorderColor = System.Drawing.Color.Gray;
+            this.dtpEndDate.BorderSize = 0;
+            this.dtpEndDate.FillColor = System.Drawing.Color.DarkGray;
+            this.dtpEndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEndDate.Location = new System.Drawing.Point(271, 33);
+            this.dtpEndDate.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(238, 35);
+            this.dtpEndDate.TabIndex = 1;
+            this.dtpEndDate.TextColor = System.Drawing.Color.Black;
+            // 
             // lbStartDate
             // 
             this.lbStartDate.AutoSize = true;
@@ -265,6 +293,7 @@
             this.btnStatisticProduct.TabIndex = 35;
             this.btnStatisticProduct.Text = "Sản phẩm";
             this.btnStatisticProduct.UseVisualStyleBackColor = false;
+            this.btnStatisticProduct.Click += new System.EventHandler(this.btnStatisticProduct_Click);
             // 
             // btnStatisticRevenue
             // 
@@ -292,34 +321,6 @@
             this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Theo";
-            // 
-            // dtpStartDate
-            // 
-            this.dtpStartDate.BorderColor = System.Drawing.Color.Gray;
-            this.dtpStartDate.BorderSize = 0;
-            this.dtpStartDate.FillColor = System.Drawing.Color.DarkGray;
-            this.dtpStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStartDate.Location = new System.Drawing.Point(3, 33);
-            this.dtpStartDate.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(226, 35);
-            this.dtpStartDate.TabIndex = 0;
-            this.dtpStartDate.TextColor = System.Drawing.Color.Black;
-            // 
-            // dtpEndDate
-            // 
-            this.dtpEndDate.BorderColor = System.Drawing.Color.Gray;
-            this.dtpEndDate.BorderSize = 0;
-            this.dtpEndDate.FillColor = System.Drawing.Color.DarkGray;
-            this.dtpEndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEndDate.Location = new System.Drawing.Point(271, 33);
-            this.dtpEndDate.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(238, 35);
-            this.dtpEndDate.TabIndex = 1;
-            this.dtpEndDate.TextColor = System.Drawing.Color.Black;
             // 
             // StatisticForm
             // 

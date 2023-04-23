@@ -31,9 +31,9 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         }
         private void btnStatisticRevenue_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(formatDate(dtpEndDate.Value.ToString()));
-            MessageBox.Show(receiptBUS.selectTotalRevenueInDay(formatDate(dtpStartDate.Value.ToString()), formatDate(dtpEndDate.Value.ToString())).Rows.Count.ToString());
-            statisticRevenue(formatDate(dtpStartDate.Value.ToString()), formatDate(dtpEndDate.Value.ToString()));
+            string startDate = formatDate(dtpStartDate.Value.ToString());
+            string endDate = formatDate(dtpEndDate.Value.ToString());
+            statisticRevenue(startDate, endDate);
         }
 
         public void statisticRevenue(string startDate, string endDate)
@@ -108,6 +108,27 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             }
 
             return revenue;
+        }
+
+        private void btnStatisticProduct_Click(object sender, EventArgs e)
+        {
+            string startDate = formatDate(dtpStartDate.Value.ToString());
+            string endDate = formatDate(dtpEndDate.Value.ToString());
+            statisticProduct(startDate, endDate);
+        }
+
+        public void statisticProduct(string startDate, string endDate)
+        {
+            DataTable top10Product = receiptBUS.selectTop10Product(startDate, endDate);
+            charProduct.Titles.Add("Top 10 Product");
+            string label = "";
+            int value = 0;
+            foreach (DataRow row in top10Product.Select())
+            {
+                label = row["productName"].ToString();
+                value = Convert.ToInt32(row["totalOfProduct"].ToString());
+                charProduct.Series["Series1"].Points.AddXY(label, value);
+            } 
         }
     }
 }

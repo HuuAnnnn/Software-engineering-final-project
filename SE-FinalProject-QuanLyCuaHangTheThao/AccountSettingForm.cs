@@ -30,7 +30,7 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             if (result == DialogResult.Yes)
             {
                 Program.curentAccount = null;
-                Application.Restart();
+                Close();
             }
         }
 

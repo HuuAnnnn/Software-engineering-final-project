@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnManagement = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.featReceipt = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.featTrolley = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel2.Controls.Add(this.btnManagement);
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.featReceipt);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.featTrolley);
@@ -68,26 +68,26 @@
             this.panel2.Size = new System.Drawing.Size(197, 593);
             this.panel2.TabIndex = 3;
             // 
-            // btnManagement
+            // button2
             // 
-            this.btnManagement.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnManagement.AutoSize = true;
-            this.btnManagement.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnManagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnManagement.FlatAppearance.BorderSize = 0;
-            this.btnManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManagement.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagement.ForeColor = System.Drawing.Color.Snow;
-            this.btnManagement.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.management_normal;
-            this.btnManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManagement.Location = new System.Drawing.Point(0, 439);
-            this.btnManagement.Name = "btnManagement";
-            this.btnManagement.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnManagement.Size = new System.Drawing.Size(197, 58);
-            this.btnManagement.TabIndex = 10;
-            this.btnManagement.Text = "Quản lý";
-            this.btnManagement.UseVisualStyleBackColor = false;
-            this.btnManagement.Click += new System.EventHandler(this.button5_Click);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.OrangeRed;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Quicksand", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Snow;
+            this.button2.Image = global::SE_FinalProject_QuanLyCuaHangTheThao.Properties.Resources.management_normal;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 439);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(197, 58);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Quản lý";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button5_Click);
             // 
             // featReceipt
             // 
@@ -348,7 +348,7 @@
         private System.Windows.Forms.Panel embedForm;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel secondaryForm;
-        private System.Windows.Forms.Button btnManagement;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button featReceipt;
     }
 }

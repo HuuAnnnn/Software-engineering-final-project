@@ -187,7 +187,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.238185F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.76182F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSearch, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.inProductSearch, 1, 0);
@@ -220,9 +220,9 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(696, 4);
+            this.btnSearch.Location = new System.Drawing.Point(694, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(132, 39);
+            this.btnSearch.Size = new System.Drawing.Size(134, 39);
             this.btnSearch.TabIndex = 32;
             this.btnSearch.Text = "Tìm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -233,10 +233,10 @@
             this.inProductSearch.BackColor = System.Drawing.Color.White;
             this.inProductSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.inProductSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inProductSearch.Location = new System.Drawing.Point(49, 5);
+            this.inProductSearch.Location = new System.Drawing.Point(48, 5);
             this.inProductSearch.Margin = new System.Windows.Forms.Padding(4);
             this.inProductSearch.Name = "inProductSearch";
-            this.inProductSearch.Size = new System.Drawing.Size(639, 37);
+            this.inProductSearch.Size = new System.Drawing.Size(638, 37);
             this.inProductSearch.TabIndex = 31;
             this.inProductSearch.Text = "";
             // 

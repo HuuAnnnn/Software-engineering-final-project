@@ -63,12 +63,6 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
             leftDisplayChooosePanel = new Panel();
             leftDisplayChooosePanel.Size = new Size(LEFT_PANEL_WIDTH, featHome.Height);
             featHome.Focus();
-
-            if (!Program.curentAccount.Role.Equals("admin"))
-            {
-                btnManagement.Visible = false;
-            }
-
             openEmbedForm(new Homepage());
         }
 
@@ -173,7 +167,13 @@ namespace SE_FinalProject_QuanLyCuaHangTheThao
         {
             activateFeature(sender, "user");
             AccountSettingForm accountSettingForm = new AccountSettingForm();
+            accountSettingForm.FormClosed += new FormClosedEventHandler(formClose);
             openEmbedForm(accountSettingForm);
+        }
+
+        private void formClose(object sender, FormClosedEventArgs e)
+        {
+            Application.Restart();
         }
 
         private void button4_Click(object sender, EventArgs e)

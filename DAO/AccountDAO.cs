@@ -50,7 +50,7 @@ namespace DAO
             {
 
                 username = row["username"].ToString();
-                role = row["role"].ToString();
+                role = row["username"].ToString();
                 timesChangePassword = int.Parse(row["timesChangePassword"].ToString());
                 logedAccount = new Account(username, "", timesChangePassword, role);
             }

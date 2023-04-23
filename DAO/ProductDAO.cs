@@ -20,48 +20,10 @@ namespace DAO
             this.product = new Product();
             Connection.connect();
         }
-        public ProductDAO(string productName, int quantityInStore, int quantityInWarehouse, string category, double price, byte[] image) 
-        {
-            string productId = generateProductId();
-            this.product = new Product(productId, productName, quantityInStore, quantityInWarehouse, category, price, image);
-            Connection.connect();
-        }
-
-        public ProductDAO(string productId, string productName, int quantityInStore, int quantityInWarehouse, string category, double price, byte[] image)
+        public ProductDAO(string productId, string productName, int quantityInStore, int quantityInWarehouse, string category, int price, byte[] image) 
         {
             this.product = new Product(productId, productName, quantityInStore, quantityInWarehouse, category, price, image);
             Connection.connect();
-        }
-
-        public Product getProduct()
-        {
-            return this.product;
-        }
-
-        private int getNextProductId()
-        {
-            String query = "select top 1 productID from product order by productID desc";
-            DataTable result = Connection.selectQuery(query);
-            string currentId = "";
-            if (result.Rows.Count > 0) 
-            {
-                foreach (DataRow row in result.Rows)
-                {
-                    currentId = row["productID"].ToString();
-                    break;
-                }
-
-                int nextId = int.Parse(currentId.Substring(2)) + 1;
-                return nextId;
-            }
-
-            return 1;
-        }
-
-        public string generateProductId()
-        {
-            int id = getNextProductId();
-            return "SP" + ("" + id).PadLeft(3, '0');
         }
 
         public void insertQuery()

@@ -2,6 +2,7 @@
 using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,11 @@ namespace BUS
         public void createNewReceipt()
         {
             receiptDAO.insertNewReceipt();
+        }
+
+        public DataTable selectTotalRevenueInDay(string startDate, string endDate)
+        {
+            return receiptDAO.selectTotalRevenueInDay(startDate, endDate);
         }
     }
 }

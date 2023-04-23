@@ -13,6 +13,7 @@ namespace DAO
     public class ReceiptDAO
     {
         private Receipt receipt;
+        
         public ReceiptDAO()
         {
             Connection.connect();
@@ -66,6 +67,16 @@ namespace DAO
             command.Parameters.Add("@customerId", SqlDbType.NVarChar, 50);
             command.Parameters["@customerId"].Value = receipt.Customer;
             Connection.actionQuery(command);
+        }
+
+        public DataTable selectTotalRevenueInDay(string startDate, string endDate)
+        {
+            string selectQuery = "SELECT t1.dateCreated, SUM(t1.total) as totalInDay"
+                                + " FROM(SELECT * FROM Receipt WHERE dateCreated BETWEEN '" + startDate + "' AND '" + endDate + "') as t1"
+                                + " GROUP BY t1.dateCreated"
+                                + " ORDER BY t1.dateCreated Desc";
+            
+            return Connection.selectQuery(selectQuery);
         }
     }
 }
